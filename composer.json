@@ -1,0 +1,26 @@
+{
+  "require": {
+    "fguillot/picodb": "@stable",
+    "ozdemir/datatables": "^1.6",
+    "kittinan/php-line-notify": "^0.5.0",
+    "guzzlehttp/guzzle": "^6.3",
+    "php-console/php-console": "^3.1",
+    "ccampbell/chromephp": "^4.1",
+    "nesbot/carbon": "^1.27",
+    "usmanhalalit/pixie": "2.*@dev",
+    "dompdf/dompdf": "^0.8.2",
+    "jenssegers/date": "^3.4",
+    "tracy/tracy": "^2.4",
+    "j4mie/idiorm": "^1.5",
+    "plasticbrain/php-flash-messages": "^1.0",
+    "samayo/bulletproof": "3.2.*",
+    "ifsnop/mysqldump-php": "^2.4",
+    "picqer/php-barcode-generator": "^0.2.2"
+  },
+  "autoload": {
+    "files": [
+      "config/database.php",
+      "config/function.php"
+    ]
+  }
+}
