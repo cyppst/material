@@ -14,7 +14,7 @@ $msg = new \Plasticbrain\FlashMessages\FlashMessages();
     <meta property="twitter:creator" content="@pratikborsadiya">
     <!-- Open Graph Meta-->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Vali Admin">
+    <meta property="og:site_name" content="ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ">
     <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
@@ -34,7 +34,7 @@ $msg = new \Plasticbrain\FlashMessages\FlashMessages();
 
     <script src="/assets/js/sweetalert2.js"></script>
     <link rel="stylesheet" href="/assets/css/sweetalert2.css">
-    <title>Vali Admin</title>
+    <title>ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ</title>
 
 </head>
 <body class="app sidebar-mini rtl">
@@ -133,21 +133,21 @@ $msg = new \Plasticbrain\FlashMessages\FlashMessages();
     <ul class="app-menu">
         <li class=""><a class="app-menu__item"
                         href="/student/material/take.php"><i
-                        class="app-menu__icon fa fa-dashboard"></i><span
+                        class="app-menu__icon fa fa-page"></i><span
                         class="app-menu__label">รายการเบิกวัสดุ</span></a></li>
 
         <li class=""><a class="app-menu__item"
                         href="/student/material/take.php"><i
-                        class="app-menu__icon fa fa-dashboard"></i><span
+                        class="app-menu__icon fa fa-page"></i><span
                         class="app-menu__label">รายการยืมอุปกรณ์</span></a></li>
         <li class=""><a class="app-menu__item"
                         href="/student/equipment/return.php"><i
-                        class="app-menu__icon fa fa-dashboard"></i><span
+                        class="app-menu__icon fa fa-page"></i><span
                         class="app-menu__label">รายการคืนอุปกรณ์</span></a></li>
 
         <li class=""><a class="app-menu__item"
                         href="/student/report"><i
-                        class="app-menu__icon fa fa-dashboard"></i><span
+                        class="app-menu__icon fa fa-page"></i><span
                         class="app-menu__label">ออกรายงาน</span></a></li>
 
     </ul>

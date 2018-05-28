@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df50cf2d-1904-4a32-a086-2042cde20024" name="Default" comment="" />
+    <list default="true" id="df50cf2d-1904-4a32-a086-2042cde20024" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/equipment/borrow/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/borrow/confirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/equipment/borrow/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/borrow/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/equipment/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/equipment/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/equipment/in/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/in/confirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/equipment/in/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/in/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/equipment/return/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/return/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material/in/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/in/confirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material/in/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/in/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material/out/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/out/confirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material/out/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/out/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material_type/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material_type/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/student/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/student/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/unit/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/unit/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/user/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/user/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/blank-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/blank-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/bootstrap-components.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/bootstrap-components.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/form-components.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/form-components.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/form-custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/form-custom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/form-notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/form-notifications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/form-samples.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/form-samples.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-error.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-invoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-lockscreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-lockscreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-mailbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-mailbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/page-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/table-basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/table-basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/table-data-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/table-data-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/ui-cards.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/ui-cards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/docs/widgets.html" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/docs/widgets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/src/pug/includes/_head.pug" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/src/pug/includes/_head.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/src/pug/layouts/_layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/src/pug/layouts/_layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vali-admin/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vali-admin/src/sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/include/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/index.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,24 +62,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage/material/create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage/equipment/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="1185">
               <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
             </state>
           </provider>
@@ -36,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/manage/equipment/insert.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -44,8 +88,26 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage/equipment/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="39" column="77" lean-forward="true" selection-start-line="39" selection-end-line="40" />
+            <state relative-caret-position="255">
+              <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dashboard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="59" column="75" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/vali-admin/docs/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="178" column="21" selection-start-line="178" selection-end-line="196" />
             </state>
           </provider>
         </entry>
@@ -53,8 +115,8 @@
       <file leaf-file-name="material.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/material.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="192" column="52" lean-forward="true" selection-start-line="192" selection-start-column="52" selection-end-line="192" selection-end-column="52" />
+            <state relative-caret-position="2880">
+              <caret line="192" column="52" selection-start-line="192" selection-start-column="52" selection-end-line="192" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -63,25 +125,16 @@
         <entry file="file://$PROJECT_DIR$/manage/user/delete.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manage/user/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="41" column="66" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="66" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage/material/in/index.php">
+        <entry file="file://$PROJECT_DIR$/manage/user/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+            <state relative-caret-position="150">
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -89,17 +142,17 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage/material/out/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="31" column="56" lean-forward="true" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+            <state relative-caret-position="465">
+              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="208" column="110" selection-start-line="208" selection-start-column="110" selection-end-line="208" selection-end-column="110" />
+            <state relative-caret-position="138">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -108,16 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sess</find>
-      <find>head.php`</find>
-      <find>/autoloa</find>
-      <find>/</find>
-      <find>.</find>
-      <find>unit</find>
-      <find>$_SESSION['student</find>
-      <find>&lt;li</find>
-      <find>manager</find>
-      <find>src=</find>
       <find>img src</find>
       <find>เบิกวุส</find>
       <find>เบิกว</find>
@@ -138,10 +181,18 @@
       <find>we'll never share your email with                                     anyone else.</find>
       <find>We'll never share your email with[*]else.                                   anyone else.                                 &lt;/small&gt;</find>
       <find>true</find>
+      <find>blank</find>
+      <find>Page</find>
+      <find>tart a beautiful jo</find>
+      <find>fa-dashboard</find>
+      <find>Vali Admin</find>
+      <find>app-c</find>
+      <find>monthly</find>
+      <find>USER</find>
+      <find>nt</find>
+      <find>notifi</find>
     </findStrings>
     <replaceStrings>
-      <replace>OOT'] . '/student/include/</replace>
-      <replace>s.</replace>
       <replace>$student</replace>
       <replace>i.</replace>
       <replace>วัสดุ</replace>
@@ -170,13 +221,18 @@
       <replace />
       <replace>ป้อนข้อมูลด้วยเครื่องแสกน Barcode</replace>
       <replace>print</replace>
+      <replace>fa-page</replace>
+      <replace>ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/student</dir>
       <dir>$PROJECT_DIR$/manage</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -220,12 +276,14 @@
         <option value="$PROJECT_DIR$/manage/material/out/index.php" />
         <option value="$PROJECT_DIR$/manage/equipment/borrow/index.php" />
         <option value="$PROJECT_DIR$/manage/material/create.php" />
-        <option value="$PROJECT_DIR$/include/head.php" />
         <option value="$PROJECT_DIR$/manage/equipment/create.php" />
         <option value="$PROJECT_DIR$/manage/equipment/insert.php" />
         <option value="$PROJECT_DIR$/manage/equipment/index.php" />
         <option value="$PROJECT_DIR$/manage/user/delete.php" />
         <option value="$PROJECT_DIR$/manage/user/index.php" />
+        <option value="$PROJECT_DIR$/node_modules/vali-admin/docs/index.html" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/include/head.php" />
       </list>
     </option>
   </component>
@@ -278,11 +336,13 @@
     <option name="width" value="1356" />
     <option name="height" value="529" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -385,6 +445,24 @@
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="vali-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="vali-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -430,13 +508,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="user/index&#9;FILE&#9;file:///var/www/html/manage/user/index.php&#10;head.&#9;FILE&#9;file:///var/www/html/include/head.php&#10;take.php&#9;FILE&#9;file:///var/www/html/report/material/take.php&#10;head.php&#9;FILE&#9;file:///var/www/html/include/head.php&#10;STUDENT&#9;FILE&#9;file:///var/www/html/student&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;.sql&#9;FILE&#9;file:///var/www/html/material.sql&#10;SIDEB&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin/src/sass/3-component/_sidebar-mini.scss&#10;function.php&#9;FILE&#9;file:///var/www/html/config/function.php" />
+    <property name="SearchEverywhereHistoryKey" value="head&#9;FILE&#9;file:///var/www/html/include/head.php&#10;vali&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin&#10;dash&#9;FILE&#9;file:///var/www/html/dashboard.php&#10;user/index&#9;FILE&#9;file:///var/www/html/manage/user/index.php&#10;head.&#9;FILE&#9;file:///var/www/html/include/head.php&#10;take.php&#9;FILE&#9;file:///var/www/html/report/material/take.php&#10;head.php&#9;FILE&#9;file:///var/www/html/include/head.php&#10;STUDENT&#9;FILE&#9;file:///var/www/html/student&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;.sql&#9;FILE&#9;file:///var/www/html/material.sql&#10;SIDEB&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin/src/sass/3-component/_sidebar-mini.scss&#10;function.php&#9;FILE&#9;file:///var/www/html/config/function.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/www/tax" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -475,34 +552,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527429949001</updated>
-      <workItem from="1527429950463" duration="38199000" />
+      <workItem from="1527429950463" duration="38783000" />
+      <workItem from="1527479856441" duration="260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38199000" />
+    <option name="totallyTimeSpent" value="39043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1600" height="866" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3288948" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32977304" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.211875" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
@@ -519,9 +597,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manage/material/pdo.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/pdo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -543,15 +618,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="43" column="73" selection-start-line="43" selection-start-column="73" selection-end-line="43" selection-end-column="73" />
-          <folding>
-            <element signature="e#132#150#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/material/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/report/material/index.php" />
     <entry file="file://$PROJECT_DIR$/include/dataTable.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -562,13 +632,6 @@
           <folding>
             <element signature="n#div#0;n#main#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -736,9 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-210">
           <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="e#72#90#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,28 +860,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/material/in/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="435">
           <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/material/out/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="31" column="56" lean-forward="true" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="208" column="110" selection-start-line="208" selection-start-column="110" selection-end-line="208" selection-end-column="110" />
+        <state relative-caret-position="465">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/equipment/create.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="1185">
           <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
         </state>
       </provider>
@@ -829,35 +882,56 @@
     <entry file="file://$PROJECT_DIR$/manage/equipment/insert.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/material.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="192" column="52" lean-forward="true" selection-start-line="192" selection-start-column="52" selection-end-line="192" selection-end-column="52" />
+        <state relative-caret-position="2880">
+          <caret line="192" column="52" selection-start-line="192" selection-start-column="52" selection-end-line="192" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/user/delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/equipment/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="39" column="77" lean-forward="true" selection-start-line="39" selection-end-line="40" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/user/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="41" column="66" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="66" />
+        <state relative-caret-position="150">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/equipment/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vali-admin/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="178" column="21" selection-start-line="178" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="59" column="75" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>

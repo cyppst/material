@@ -7,7 +7,7 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-dashboard"></i> ออกรายงานe</h1>
+            <h1><i class="fa fa-page"></i> ออกรายงานe</h1>
             <p>การเบิกวัสดุประจำเดือน</p>
         </div>
         <ul class="app-breadcrumb breadcrumb">

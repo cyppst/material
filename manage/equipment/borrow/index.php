@@ -4,7 +4,7 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-dashboard"></i> ยืมอุปกรณ์
+            <h1><i class="fa fa-page"></i> ยืมอุปกรณ์
             </h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">

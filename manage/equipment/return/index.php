@@ -23,7 +23,7 @@ if (isset($_GET['student_id'])) {
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-dashboard"></i> คืนอุปกรณ์
+            <h1><i class="fa fa-page"></i> คืนอุปกรณ์
             </h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">

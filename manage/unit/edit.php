@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'):
     <main class="app-content">
         <div class="app-title">
             <div>
-                <h1><i class="fa fa-dashboard"></i> แก้ไขหน่่วยนับ
+                <h1><i class="fa fa-page"></i> แก้ไขหน่่วยนับ
                 </h1>
             </div>
             <ul class="app-breadcrumb breadcrumb">

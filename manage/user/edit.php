@@ -19,7 +19,7 @@ if (isset($_SESSION['formFields'])) {
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-dashboard"></i> แก้ไขอาจารย์
+            <h1><i class="fa fa-page"></i> แก้ไขอาจารย์
             </h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">

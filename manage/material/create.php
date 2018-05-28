@@ -4,7 +4,7 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-dashboard"></i> เพิ่มวัสดุ
+            <h1><i class="fa fa-page"></i> เพิ่มวัสดุ
             </h1>
             <!--            <p>Start a beautiful journey here</p>-->
         </div>

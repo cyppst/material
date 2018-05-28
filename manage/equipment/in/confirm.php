@@ -21,7 +21,7 @@ if (empty($material)) {
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-dashboard"></i> รับอุปกรณ์
+            <h1><i class="fa fa-page"></i> รับอุปกรณ์
             </h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">

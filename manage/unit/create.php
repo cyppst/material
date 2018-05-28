@@ -12,7 +12,7 @@ if (isset($_SESSION['formFields'])) {
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-dashboard"></i> เพิ่มหน่วยนับ
+            <h1><i class="fa fa-page"></i> เพิ่มหน่วยนับ
             </h1>
             <!--            <p>Start a beautiful journey here</p>-->
         </div>

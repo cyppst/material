@@ -49,7 +49,7 @@ endif;
     <style type="text/css">
 
     </style>
-    <title>Vali Admin</title>
+    <title>ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ</title>
 </head>
 <body>
 
