@@ -3,18 +3,12 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 28, 2018 at 09:32 AM
+-- Generation Time: May 31, 2018 at 12:42 PM
 -- Server version: 5.7.22
 -- PHP Version: 7.2.5-0ubuntu0.18.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `material_db`
@@ -33,7 +27,8 @@ CREATE TABLE `equipment` (
   `detail` text,
   `image` varchar(50) NOT NULL DEFAULT 'default.png',
   `datetime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `no_barcode` tinyint(1) NOT NULL DEFAULT '0'
+  `no_barcode` tinyint(1) NOT NULL DEFAULT '0',
+  `amount` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -55,13 +50,16 @@ CREATE TABLE `equipment_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `equipment_stock`
+-- Table structure for table `log`
 --
 
-CREATE TABLE `equipment_stock` (
-  `id` int(10) NOT NULL,
-  `equipment_id` int(10) DEFAULT NULL,
-  `amount` int(50) DEFAULT NULL
+CREATE TABLE `log` (
+  `id` int(11) NOT NULL,
+  `datetime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `type` enum('วัสดุ','อุปกรณ์') NOT NULL,
+  `item_id` int(11) NOT NULL,
+  `amount` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -77,34 +75,23 @@ CREATE TABLE `material` (
   `detail` text NOT NULL,
   `type_id` int(10) NOT NULL,
   `unit_id` int(11) NOT NULL,
-  `image` varchar(50) NOT NULL DEFAULT 'default.png'
+  `image` varchar(50) NOT NULL DEFAULT 'default.png',
+  `amount` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `material_inventory`
+-- Table structure for table `material_history`
 --
 
-CREATE TABLE `material_inventory` (
+CREATE TABLE `material_history` (
   `id` int(10) NOT NULL,
   `datetime` datetime DEFAULT CURRENT_TIMESTAMP,
   `user_id` int(11) NOT NULL,
   `material_id` int(11) NOT NULL,
   `amount` int(11) NOT NULL,
   `student_id` varchar(13) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `material_stock`
---
-
-CREATE TABLE `material_stock` (
-  `id` int(10) NOT NULL,
-  `material_id` varchar(100) DEFAULT NULL,
-  `amount` int(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -150,7 +137,7 @@ CREATE TABLE `student` (
   `full_name` varchar(50) NOT NULL,
   `section` varchar(50) NOT NULL,
   `last_login` datetime DEFAULT NULL COMMENT 'ใช้งานครั้งล่าสุด'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -194,13 +181,6 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `fullname`, `address`, `tel`, `login`, `password`, `image`) VALUES
-(1, 'Admin Comsci', '...', '0999999999', 'admin', '1234', 'default.png');
-
---
 -- Indexes for dumped tables
 --
 
@@ -218,9 +198,9 @@ ALTER TABLE `equipment_history`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `equipment_stock`
+-- Indexes for table `log`
 --
-ALTER TABLE `equipment_stock`
+ALTER TABLE `log`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -232,15 +212,9 @@ ALTER TABLE `material`
   ADD KEY `barcode_2` (`barcode`);
 
 --
--- Indexes for table `material_inventory`
+-- Indexes for table `material_history`
 --
-ALTER TABLE `material_inventory`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `material_stock`
---
-ALTER TABLE `material_stock`
+ALTER TABLE `material_history`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -282,32 +256,27 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `equipment`
 --
 ALTER TABLE `equipment`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `equipment_history`
 --
 ALTER TABLE `equipment_history`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
--- AUTO_INCREMENT for table `equipment_stock`
+-- AUTO_INCREMENT for table `log`
 --
-ALTER TABLE `equipment_stock`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `log`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `material`
 --
 ALTER TABLE `material`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT for table `material_inventory`
+-- AUTO_INCREMENT for table `material_history`
 --
-ALTER TABLE `material_inventory`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `material_stock`
---
-ALTER TABLE `material_stock`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `material_history`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `material_type`
 --
@@ -317,7 +286,7 @@ ALTER TABLE `material_type`
 -- AUTO_INCREMENT for table `report_no`
 --
 ALTER TABLE `report_no`
-  MODIFY `id` int(5) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(5) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=328;
 --
 -- AUTO_INCREMENT for table `unit`
 --
@@ -328,6 +297,3 @@ ALTER TABLE `unit`
 --
 ALTER TABLE `user`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

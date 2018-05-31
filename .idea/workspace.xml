@@ -2,78 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df50cf2d-1904-4a32-a086-2042cde20024" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins/jquery-barcodeListener.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/barcode/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/csv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/barcode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage/material/out/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage/student/_backup/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage/student/_backup/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage/student/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage/student/import.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage/student/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/pdo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/borrow/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/borrow/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/borrow/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/borrow/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/borrow/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/borrow/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/ean13_gen.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/ean13_gen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/in/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/in/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/in/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/in/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/in/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/in/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/return/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/return/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/return/return.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/return/return.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/in/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/in/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/in/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/in/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/in/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/in/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/out/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/out/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/out/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/out/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/out/insert.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/pdo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material_type/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material_type/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material_type/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/student/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/student/_backup/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/student/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/unit/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/unit/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/unit/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/equipment/borrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/equipment/borrow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/equipment/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/equipment/inventory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/equipment/not_returned.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/equipment/not_returned.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/equipment/summary.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/equipment/summary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/material/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/material/inventory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/material/summary.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/material/summary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/material/take.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/material/take.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/include/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/material/document (1).pdf" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/material/document (1).pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/material/document.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/material/document.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material.sql" beforeDir="false" afterPath="$PROJECT_DIR$/material.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tax/PDFFormsFiller" beforeDir="false" afterPath="$PROJECT_DIR$/tax/PDFFormsFiller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tax/pdfform.js" beforeDir="false" afterPath="$PROJECT_DIR$/tax/pdfform.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,18 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="summary.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report/equipment/summary.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-              <folding>
-                <element signature="e#132#150#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student/include/head.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,11 +36,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pdo.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pdo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/pdo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="75">
+              <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="return.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/equipment/return.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="take.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/report/material/take.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              <folding>
+                <element signature="e#132#150#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="material.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/material.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="298" column="64" selection-start-line="298" selection-start-column="64" selection-end-line="298" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -159,33 +113,6 @@
                 <element signature="n#div#0;n#main#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#main#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="borrow.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/student/equipment/borrow.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage/equipment/borrow/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/student/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -228,15 +155,15 @@
     <replaceStrings>
       <replace>student</replace>
       <replace>&lt;/div&gt;</replace>
+      <replace>&quot;&gt;สแกน Barcode&lt;/label&gt;</replace>
+      <replace>ป้อนข้อมูลด้วยเครื่องอ่าน Barcode</replace>
       <replace />
-      <replace />
-      <replace />
-      <replace />
+      <replace>ป้อนข้อมูลด้วยเครื่องแสกน Barcode</replace>
       <replace>print</replace>
       <replace>fa-page</replace>
-      <replace />
-      <replace />
-      <replace />
+      <replace>ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ</replace>
+      <replace>&lt;img id=&quot;img&quot; width=&quot;250px&quot;</replace>
+      <replace>&lt;form autocomplete=&quot;no&quot;</replace>
       <replace>$</replace>
       <replace>เรับ</replace>
       <replace>manage</replace>
@@ -272,7 +199,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/manage/student/create.php" />
-        <option value="$PROJECT_DIR$/material.sql" />
         <option value="$PROJECT_DIR$/manage/equipment/insert.php" />
         <option value="$PROJECT_DIR$/manage/user/delete.php" />
         <option value="$PROJECT_DIR$/manage/user/index.php" />
@@ -322,6 +248,7 @@
         <option value="$PROJECT_DIR$/manage/student/config.php" />
         <option value="$PROJECT_DIR$/student/include/head.php" />
         <option value="$PROJECT_DIR$/config/pdo.php" />
+        <option value="$PROJECT_DIR$/material.sql" />
       </list>
     </option>
   </component>
@@ -331,12 +258,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/fill/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/fill/package.json" />
       <path value="$PROJECT_DIR$/node_modules/async/package.json" />
       <path value="$PROJECT_DIR$/node_modules/basictable/package.json" />
       <path value="$PROJECT_DIR$/node_modules/fill-pdf/package.json" />
@@ -423,24 +346,13 @@
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-              <item name="equipment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-              <item name="material" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
@@ -478,7 +390,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="student/&#9;FILE&#9;file:///var/www/html/student&#10;not_re&#9;FILE&#9;file:///var/www/html/report/equipment/not_returned.php&#10;foot.php&#9;FILE&#9;file:///var/www/html/include/foot.php&#10;head&#9;FILE&#9;file:///var/www/html/student/include/head.php&#10;dash&#9;FILE&#9;file:///var/www/html/dashboard.php&#10;pdo&#9;FILE&#9;file:///var/www/html/config/pdo.php&#10;pdo.&#9;FILE&#9;file:///var/www/html/manage/material/pdo.php&#10;student/ind&#9;FILE&#9;file:///var/www/html/student/index.php&#10;head.php&#9;FILE&#9;file:///var/www/html/include/head.php&#10;HEAD.&#9;FILE&#9;file:///var/www/html/include/head.php&#10;TODO&#9;ACTION&#9;ActivateTODOToolWindow&#10;report/sum&#9;FILE&#9;file:///var/www/html/report/equipment/summary.php&#10;borrow/ins&#9;FILE&#9;file:///var/www/html/manage/equipment/borrow/insert.php&#10;blank&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin/docs/blank-page.html&#10;in/insert.php&#9;FILE&#9;file:///var/www/html/manage/equipment/in/insert.php&#10;student/up&#9;FILE&#9;file:///var/www/html/manage/student/update.php&#10;report/i&#9;FILE&#9;file:///var/www/html/report/index.php&#10;pdo.php&#9;FILE&#9;file:///var/www/html/config/pdo.php&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;sideb&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin/src/sass/3-component/_sidebar-mini.scss&#10;report/&#9;FILE&#9;file:///var/www/html/assets/report&#10;func&#9;FILE&#9;file:///var/www/html/config/function.php&#10;todo&#9;ACTION&#9;ActivateTODOToolWindow&#10;equipment/&#9;FILE&#9;file:///var/www/html/manage/equipment&#10;้ำฟก&#9;FILE&#9;file:///var/www/html/include/head.php&#10;vali&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin&#10;user/index&#9;FILE&#9;file:///var/www/html/manage/user/index.php&#10;head.&#9;FILE&#9;file:///var/www/html/include/head.php&#10;take.php&#9;FILE&#9;file:///var/www/html/report/material/take.php&#10;STUDENT&#9;FILE&#9;file:///var/www/html/student&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;.sql&#9;FILE&#9;file:///var/www/html/material.sql&#10;SIDEB&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin/src/sass/3-component/_sidebar-mini.scss&#10;function.php&#9;FILE&#9;file:///var/www/html/config/function.php" />
+    <property name="SearchEverywhereHistoryKey" value=".sql&#9;FILE&#9;file:///var/www/html/material.sql&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;take.p&#9;FILE&#9;file:///var/www/html/report/material/take.php&#10;student/&#9;FILE&#9;file:///var/www/html/student&#10;not_re&#9;FILE&#9;file:///var/www/html/report/equipment/not_returned.php&#10;foot.php&#9;FILE&#9;file:///var/www/html/include/foot.php&#10;head&#9;FILE&#9;file:///var/www/html/student/include/head.php&#10;dash&#9;FILE&#9;file:///var/www/html/dashboard.php&#10;pdo&#9;FILE&#9;file:///var/www/html/config/pdo.php&#10;pdo.&#9;FILE&#9;file:///var/www/html/manage/material/pdo.php&#10;student/ind&#9;FILE&#9;file:///var/www/html/student/index.php&#10;head.php&#9;FILE&#9;file:///var/www/html/include/head.php&#10;HEAD.&#9;FILE&#9;file:///var/www/html/include/head.php&#10;TODO&#9;ACTION&#9;ActivateTODOToolWindow&#10;report/sum&#9;FILE&#9;file:///var/www/html/report/equipment/summary.php&#10;borrow/ins&#9;FILE&#9;file:///var/www/html/manage/equipment/borrow/insert.php&#10;blank&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin/docs/blank-page.html&#10;in/insert.php&#9;FILE&#9;file:///var/www/html/manage/equipment/in/insert.php&#10;student/up&#9;FILE&#9;file:///var/www/html/manage/student/update.php&#10;report/i&#9;FILE&#9;file:///var/www/html/report/index.php&#10;pdo.php&#9;FILE&#9;file:///var/www/html/config/pdo.php&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;sideb&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin/src/sass/3-component/_sidebar-mini.scss&#10;report/&#9;FILE&#9;file:///var/www/html/assets/report&#10;func&#9;FILE&#9;file:///var/www/html/config/function.php&#10;todo&#9;ACTION&#9;ActivateTODOToolWindow&#10;equipment/&#9;FILE&#9;file:///var/www/html/manage/equipment&#10;้ำฟก&#9;FILE&#9;file:///var/www/html/include/head.php&#10;vali&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin&#10;user/index&#9;FILE&#9;file:///var/www/html/manage/user/index.php&#10;head.&#9;FILE&#9;file:///var/www/html/include/head.php&#10;take.php&#9;FILE&#9;file:///var/www/html/report/material/take.php&#10;STUDENT&#9;FILE&#9;file:///var/www/html/student&#10;term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;SIDEB&#9;FILE&#9;file:///var/www/html/node_modules/vali-admin/src/sass/3-component/_sidebar-mini.scss&#10;function.php&#9;FILE&#9;file:///var/www/html/config/function.php" />
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/poy2" />
@@ -530,12 +442,12 @@
       <workItem from="1527614906474" duration="5838000" />
       <workItem from="1527693144368" duration="8888000" />
       <workItem from="1527702701284" duration="29967000" />
-      <workItem from="1527740501041" duration="4548000" />
+      <workItem from="1527740501041" duration="4871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91909000" />
+    <option name="totallyTimeSpent" value="92232000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -557,8 +469,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3293718" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.30220714" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.246875" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30131003" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.246875" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.499375" weight="0.32896653" />
@@ -618,27 +530,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/user/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/material/out/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="77" selection-start-line="77" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/barcode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -812,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/material/take.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage/equipment/return/return.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -976,8 +860,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/pdo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="75">
+          <caret line="5" column="61" lean-forward="true" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/equipment/return.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/material/take.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="e#132#150#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="298" column="64" selection-start-line="298" selection-start-column="64" selection-end-line="298" selection-end-column="64" />
         </state>
       </provider>
     </entry>
