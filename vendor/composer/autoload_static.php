@@ -15,6 +15,7 @@ class ComposerStaticInit6f2aad7ca24bb170aebd04712d59a02f
         '7745382c92b7799bf1294b1f43023ba2' => __DIR__ . '/..' . '/tracy/tracy/src/shortcuts.php',
         'e498698fb6f1e841bf7ec2b12ccada5f' => __DIR__ . '/../..' . '/config/database.php',
         '00e22987c8782569329a21f4c5f7e1bf' => __DIR__ . '/../..' . '/config/function.php',
+        'dd327931ef0b58fe23cbb9c3d2663385' => __DIR__ . '/../..' . '/config/csv.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -157,6 +158,13 @@ class ComposerStaticInit6f2aad7ca24bb170aebd04712d59a02f
             'PicoDb' => 
             array (
                 0 => __DIR__ . '/..' . '/fguillot/picodb/lib',
+            ),
+        ),
+        'G' => 
+        array (
+            'Goodby\\CSV' => 
+            array (
+                0 => __DIR__ . '/..' . '/goodby/csv/src',
             ),
         ),
         'C' => 

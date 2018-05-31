@@ -6,8 +6,8 @@ $pdo_data = array(
     'host' => 'localhost',        // database host (default localhost)
     'name' => 'material_db',        // database name
     'encoding' => 'utf8',        // database connection encoding type
-    'fetch_assoc' => false,        // if true: fetch a result row only as an associative array
-    'display_errors' => false    // if true: errors will be displayed
+    'fetch_assoc' => true,        // if true: fetch a result row only as an associative array
+    'display_errors' => true    // if true: errors will be displayed
 );
 try {
     $pdo = new PDO("mysql:host=$pdo_data[host]; dbname=$pdo_data[name]; encoding=$pdo_data[encoding]", $pdo_data['user'], $pdo_data['password'],

@@ -2,14 +2,18 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 $barcode = $_POST['barcode'];
 
+
 $equipment = ORM::for_table('equipment')
     ->where('barcode', $barcode)
     ->find_one();
 
+
 if (empty($equipment)) {
-    set_message('success', 'No');
-    redirect('index.php');
+    $msg = new \Plasticbrain\FlashMessages\FlashMessages();
+    if (!session_id()) @session_start();
+    $msg->error('`ไม่พบ Barcode นี้ในระบบ`', 'import.php');
 }
+
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php'; ?>
@@ -27,7 +31,7 @@ if (empty($equipment)) {
     </div>
     <div class="equipment">
         <div class="col-md-12">
-            <form id="in" action="insert.php" method="POST">
+            <form autocomplete="no" action="insert.php" method="POST">
                 <input type="hidden" name="equipment_id" value="<?= $equipment->id; ?>">
                 <div class="tile">
                     <div class="equipment">
@@ -35,7 +39,8 @@ if (empty($equipment)) {
                             <div id="data_div">
                                 <ul class="list-group">
                                     <li class="list-group-item"><strong>ชื่อวัสดุ :</strong>
-                                        <span><?= $equipment->name; ?></span></li>
+                                        <span><?= $equipment->name; ?></span> <span
+                                                class="badge badge-info"><?= $equipment->amount; ?></span></li>
                                     <li class="list-group-item"><strong>รายละเอียด</strong>
                                         <p><?= $equipment->detail; ?></p></li>
                                     <li class="list-group-item">

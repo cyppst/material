@@ -18,15 +18,15 @@ if (isset($_GET['month'])):
     $report->save();
 
     $sth = $pdo->query("SELECT
-i.id id,
-i.datetime datetime,
+h.id id,
+h.datetime datetime,
 u.fullname fullname,
 m.name material_name,
 t.name material_type,
-amount
-FROM `material_inventory` AS i
-LEFT JOIN user AS u ON i.user_id = u.id
-LEFT JOIN material AS m ON i.material_id = m.id
+h.amount as amount
+FROM `material_history` AS h
+LEFT JOIN user AS u ON h.user_id = u.id
+LEFT JOIN material AS m ON h.material_id = m.id
 LEFT JOIN material_type AS t ON m.type_id = t.id
 WHERE MONTH(datetime) = $input[1] AND YEAR(datetime) = $input[0]");
     $result = $sth->fetchAll(PDO::FETCH_ASSOC);

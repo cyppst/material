@@ -1,7 +1,9 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php'; ?>
 
 <?php
+if (!session_id()) @session_start();
 $barcode = $_POST['barcode'];
+
 
 $material = ORM::for_table('material')
     ->table_alias('m')
@@ -14,12 +16,13 @@ $material = ORM::for_table('material')
     ->find_one();
 
 
-if (empty($material)) {
+if (!isset($material)) {
     if (!session_id()) @session_start();
-
     $msg = new Plasticbrain\FlashMessages\FlashMessages();
-    $msg->error('ไม่พบข้อมูล รหัส : ' . $barcode . ' ในระบบ.', 'index.php');
+    $msg->error('ไม่พบข้อมูล รหัส : ' . $barcode . ' ในระบบ.', 'import.php');
 }
+
+$stock = ORM::for_table('material_stock')->find_one($material['id']);
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php'; ?>
@@ -27,7 +30,7 @@ if (empty($material)) {
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-page"></i> เบิกวัสดุ
+            <h1><i class="fa fa-page"></i> รับวัสดุ
             </h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
@@ -37,15 +40,16 @@ if (empty($material)) {
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form id="in" action="insert.php" method="POST">
-                <input type="hidden" name="material_id" value="<?= $material['id'] ?>">
+            <form autocomplete="no" action="update.php" method="POST">
+                <input type="hidden" name="material_id" value="<?= $material->id ?>">
                 <div class="tile">
                     <div class="row">
                         <div class="col-lg-12">
                             <div id="data_div">
                                 <ul class="list-group">
                                     <li class="list-group-item"><strong>ชื่อวัสดุ :</strong>
-                                        <span><?= $material['name'] ?></span></li>
+                                        <span><?= $material->name ?></span> <span
+                                                class="badge badge-info"><?= $material->amount; ?></span></li>
                                     <li class="list-group-item"><strong>รายละเอียด</strong>
                                         <p><?= $material['detail'] ?></p></li>
                                     <li class="list-group-item">
@@ -54,7 +58,7 @@ if (empty($material)) {
                                                 <span class="input-group-text">จำนวน</span></div>
                                             <input class="form-control" type="text" name="amount">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text"><?= $material['unit_name'] ?></span>
+                                                <span class="input-group-text"><?= $material->unit_name ?></span>
                                             </div>
                                         </div>
                                     </li>

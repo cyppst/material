@@ -25,9 +25,8 @@
                             <div class="form-group">
                                 <label for="barcode">แสกน Barcode <i class="fas fa-barcode"></i>
                                 </label>
-                                <script src="/assets/js/plugins/barcode-scanner.js"></script>
-                                <input class="form-control" name="barcode" type="text"  value="<?= get_input('barcode') ?>" data-barcode-scanner-target
-                                       readonly>
+                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/barcode.php'; ?>
+
                             </div>
                             <div class="form-group">
                                 <label for="type_id">ประเภท</label>

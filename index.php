@@ -119,7 +119,7 @@ endif;
             </div>
 
             <!-- Modal body -->
-            <form action="/student/index.php" method="POST">
+            <form action="/student" method="POST">
                 <div class="modal-body">
                     <div class="form-group">
                         <label class="control-label">รหัสประจำตัวนักศึกษา</label>

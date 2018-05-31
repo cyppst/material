@@ -3,34 +3,21 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     session_start();
-    $row = [
-        'id' => $_GET['id'],
-        'fullname' => $_POST['fullname'],
-        'address' => $_POST['address'],
-        'tel' => $_POST['tell'],
-        'password' => $_POST['password'],
-        'status' => $_POST['status'],
-        'section' => $_POST['section']
-    ];
 
-    $sql = "UPDATE user SET fullname=:fullname, address=:address, tel=:tel, password=:password, status=:status, section=:section WHERE id=:id;";
+    $material_id = $_POST['material_id'];
+    $amount = $_POST['amount'];
 
-    if ($conn->prepare($sql)->execute($row)) {
-        unset($conn);
-        $_SESSION['message']['success'] = 'แก้ไขผู้ใช้เรียบร้อย';
-        header("Location: /manage/user");
-        exit();
-    } else {
-        unset($conn);
-        $_SESSION['message']['error'] = 'ผิดพลาด';
+    $material = ORM::for_table('material')->find_one($material_id);
+    $material->amount = $material->get('amount') + $amount;
+    $material->save();
 
-        foreach ($_POST as $field => $value) {
-            $_SESSION['formFields'][$field] = $value;
-        }
-        header('Location: ' . $_SERVER['HTTP_REFERER']);
-        exit();
-    }
 
-} else {
-    header("Location: /");
+    $log = ORM::for_table('log')->create();
+    $log->type = 'อุปกรณ์';
+    $log->item_id = $material_id;
+    $log->amount = $amount;
+    $log->save();
+    $msg = new \Plasticbrain\FlashMessages\FlashMessages();
+    $msg->success('ok', 'import.php');
+
 }

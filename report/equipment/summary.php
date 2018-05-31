@@ -17,18 +17,19 @@ if (isset($_GET['month'])):
     $report->user_id = $_SESSION['user']['id'];
     $report->save();
 
-    $sth = $pdo->query("
-SELECT
-i.datetime datetime,
-u.fullname fullname,
-e.name equipment_name,
-i.amount amount,
-i.status status
-FROM equipment_history AS i
-LEFT JOIN user AS u ON i.user_id = u.id
-LEFT JOIN equipment AS e ON i.equipment_id = e.id
-WHERE MONTH(i.datetime) = $input[1] AND YEAR(i.datetime) = $input[0]");
+    $sth = $pdo->query("SELECT
+    h.id,
+    h.datetime datetime,
+    h.status status,
+    u.fullname fullname,
+    e.name equipment_name,
+    e.amount as amount
+FROM `equipment_history` AS h
+LEFT JOIN user AS u ON h.user_id = u.id
+LEFT JOIN equipment AS e ON h.equipment_id = e.id
+WHERE MONTH(h.datetime) = $input[1] AND YEAR(h.datetime) = $input[0]");
     $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
     ?>
     <!doctype html>
 

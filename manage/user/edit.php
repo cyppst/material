@@ -13,7 +13,7 @@ if (isset($_SESSION['formFields'])) {
     $user = ORM::for_table('user')->find_one($_GET['id']);
 
 } else {
-    $msg->error('0', 'index.php');
+    $msg->error('0', 'import.php');
 }
 ?>
 <main class="app-content">

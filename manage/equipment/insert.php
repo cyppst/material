@@ -36,5 +36,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') :
         $equipment->no_barcode = true;
         $equipment->save();
     }
-    $msg->success('ok', 'index.php');
+    $msg->success('ok', 'import.php');
 endif;

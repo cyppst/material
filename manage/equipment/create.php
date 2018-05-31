@@ -22,13 +22,10 @@
                 <div class="tile">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div id="barcode" class="form-group">
+                            <div id="barcode-div" class="form-group">
                                 <label for="barcode">แสกน Barcode <i class="fas fa-barcode"></i>
                                 </label>
-                                <script src="/assets/js/plugins/barcode-scanner.js"></script>
-                                <input class="form-control" name="barcode" type="text"
-                                       value="<?= get_input('barcode') ?>" data-barcode-scanner-target
-                                       readonly>
+                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/barcode.php'; ?>
                                 <small class="form-text text-muted" id="text-barcode">We'll never share your email with
                                     anyone else.
                                 </small>
@@ -77,9 +74,9 @@
     $(function () {
         $("#no_barcode").click(function () {
             if ($(this).is(":checked")) {
-                $("#barcode").hide();
+                $("#barcode-div").hide();
             } else {
-                $("#barcode").show();
+                $("#barcode-div").show();
             }
         });
     });

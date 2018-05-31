@@ -3,16 +3,14 @@
 <?php
 $barcode = $_POST['barcode'];
 
-
 $equipment = ORM::for_table('equipment')
     ->where('barcode', $barcode)
     ->find_one();
 
-if (empty($material)) {
+if (empty($equipment)) {
+    $msg = new \Plasticbrain\FlashMessages\FlashMessages();
     if (!session_id()) @session_start();
-
-    $msg = new Plasticbrain\FlashMessages\FlashMessages();
-    $msg->error('ไม่พบข้อมูล รหัส : ' . $barcode . ' ในระบบ.', 'index.php');
+    $msg->error('`ไม่พบ Barcode นี้ในระบบ`', 'import.php');
 }
 ?>
 
@@ -31,7 +29,7 @@ if (empty($material)) {
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form id="in" action="insert.php" method="POST">
+            <form autocomplete="no" action="insert.php" method="POST">
                 <input type="hidden" name="equipment_id" value="<?= $equipment['id'] ?>">
                 <div class="tile">
                     <div class="row">

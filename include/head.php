@@ -36,8 +36,8 @@ if (!isset($_SESSION['user'])) {
     <link rel="stylesheet" type="text/css"
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 
     <script src="/assets/js/jquery-3.2.1.min.js"></script>
@@ -106,6 +106,12 @@ if (!isset($_SESSION['user'])) {
                 <li><a class="treeview-item <?= is_current('material_type'); ?> "
                        href="/manage/material_type"><i
                                 class="icon fa fa-print"></i>ประเภทวัสดุ</a></li>
+                <li><a class="treeview-item <?= is_current('material_type'); ?> "
+                       href="/barcode"><i
+                                class="icon fa fa-print"></i>สร้างบาร์โค๊ด</a></li>
+                <li><a class="treeview-item <?= is_current('material_type'); ?> "
+                       href="/manage/student"><i
+                                class="icon fa fa-print"></i>นำเข้ารายชื่อ นศ.</a></li>
             </ul>
         </li>
 
@@ -134,13 +140,20 @@ if (!isset($_SESSION['user'])) {
                         class="app-menu__label">ออกรายงาน</span><i
                         class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="/report/"><i class="icon fa fa-print"></i>รายงานการเบิกวัสดุประจำเดือน</a></li>
-                <li><a class="treeview-item" href="/report/"><i class="icon fa fa-print"></i>รายงานการยืมอุปกรณืประจำเดือน</a></li>
-                <li><a class="treeview-item" href="/report/equipment/not_returned.php"><i class="icon fa fa-print"></i>รายงานการยืมอุปกรณ์ที่ค้างส่งคืน</a></li>
-                <li><a class="treeview-item" href="/report/material/inventory.php"><i class="icon fa fa-print"></i>รายงานยอดคงเหลือวัสดุ</a></li>
-                <li><a class="treeview-item" href="/report/equipment/inventory.php"><i class="icon fa fa-print"></i>รายงานยอดคงเหลืออุปกรณ์</a></li>
-                <li><a class="treeview-item" href="/report/material/take.php"><i class="icon fa fa-print"></i>รายงานสรุปยอดจำนวนการเบิกวัสดุุ</a></li>
-                <li><a class="treeview-item" href="/report/equipment/borrow.php"><i class="icon fa fa-print"></i>รายงานสรุปยอดจำนวนการยืมอุปกรณ์</a></li>
+                <li><a class="treeview-item" href="/report/"><i class="icon fa fa-print"></i>การเบิกวัสดุ</a>
+                </li>
+                <li><a class="treeview-item" href="/report/"><i class="icon fa fa-print"></i>การยืมอุปกรณืประจำเดือน</a>
+                </li>
+                <li><a class="treeview-item" href="/report/equipment/not_returned.php"><i class="icon fa fa-print"></i>การยืมอุปกรณ์ที่ค้างส่งคืน</a>
+                </li>
+                <li><a class="treeview-item" href="/report/material/inventory.php"><i class="icon fa fa-print"></i>ยอดคงเหลือวัสดุ</a>
+                </li>
+                <li><a class="treeview-item" href="/report/equipment/inventory.php"><i class="icon fa fa-print"></i>ยอดคงเหลืออุปกรณ์</a>
+                </li>
+                <li><a class="treeview-item" href="/report/material/take.php"><i class="icon fa fa-print"></i>สรุปยอดการเบิกวัสดุ</a>
+                </li>
+                <li><a class="treeview-item" href="/report/equipment/borrow.php"><i class="icon fa fa-print"></i>สรุปการยืมอุปกรณ์</a>
+                </li>
             </ul>
         </li>
 

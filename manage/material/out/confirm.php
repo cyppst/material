@@ -13,12 +13,13 @@ $material = ORM::for_table('material')
     ->join('unit', array('m.unit_id', '=', 'u.id'), 'u')
     ->find_one();
 
-//var_dump($material);
-
-if (empty($material)) {
-    set_message('success', 'No');
-    redirect('index.php');
+if (!$material->count()) {
+    if (!session_id()) @session_start();
+    $msg = new Plasticbrain\FlashMessages\FlashMessages();
+    $msg->error('ไม่พบข้อมูล รหัส : ' . $barcode . ' ในระบบ.', 'import.php');
 }
+
+
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php'; ?>
@@ -36,7 +37,7 @@ if (empty($material)) {
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form id="in" action="insert.php" method="POST">
+            <form autocomplete="no" action="update.php" method="POST">
                 <input type="hidden" name="material_id" value="<?= $material['id'] ?>">
                 <div class="tile">
                     <div class="row">
@@ -44,7 +45,8 @@ if (empty($material)) {
                             <div id="data_div">
                                 <ul class="list-group">
                                     <li class="list-group-item"><strong>ชื่อวัสดุ :</strong>
-                                        <span><?= $material['name'] ?></span></li>
+                                        <span><?= $material->material_name ?></span> <span
+                                                class="badge badge-info"><?= $material->amount; ?></span></li>
                                     <li class="list-group-item"><strong>รายละเอียด</strong>
                                         <p><?= $material['detail'] ?></p></li>
                                     <li class="list-group-item">
@@ -53,7 +55,7 @@ if (empty($material)) {
                                                 <span class="input-group-text">จำนวน</span></div>
                                             <input class="form-control" type="text" name="amount">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text"><?= $material['unit_name'] ?></span>
+                                                <span class="input-group-text"><?= $unit_name; ?></span>
                                             </div>
                                         </div>
                                     </li>

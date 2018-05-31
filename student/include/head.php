@@ -2,7 +2,18 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 if (!session_id()) @session_start();
 $msg = new \Plasticbrain\FlashMessages\FlashMessages();
+if (isset($_POST['student_id'])) {
+    $id = $_POST['student_id'];
+    $student = ORM::for_table('student')->findOne($id);
+    if (!$student) {
+        $msg->error('<strong>ไม่พบข้อมูล</strong> กรุณาตรวจสอบรหัส นศ. ของท่านให้ถูกต้อง', '/');
+    } else {
+        $_SESSION['student'] = $student;
+    }
+}
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

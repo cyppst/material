@@ -4,7 +4,6 @@ $msg = new \Plasticbrain\FlashMessages\FlashMessages();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!session_id()) @session_start();
-
     $count = ORM::for_table('user')->where('login', $_POST['login'])->count();
     if ($count > 0) {
         $msg->warning('Login ซ้ำ', 'create.php');
@@ -30,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = $user->save();
 
         if ($result) {
-            $msg->success('This is a success message', 'index.php');
+            $msg->success('This is a success message', 'import.php');
         } else {
             $msg->error('This is an error message', 'create.php');
 

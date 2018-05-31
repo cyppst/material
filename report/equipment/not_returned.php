@@ -32,7 +32,7 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" href="http://localhost/assets/report/report.css">
-    </head>
+    </head>`````````
     <body>
     <div class="sru-logo"></div>
 

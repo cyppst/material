@@ -37,7 +37,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                         $equipments = ORM::for_table('equipment')->find_many();
                         foreach ($equipments as $equipment): ?>
                             <tr>
-                                <td><span class="<?= ($equipment['no_barcode'] ? 'text-info':''); ?>"><?= $equipment['barcode'] ?></span></td>
+                                <td>
+                                    ์<span
+                                                class="<?= ($equipment['no_barcode'] ? 'text-info' : ''); ?>"><?= $equipment['barcode'] ?></span>
+
                                 <td><?= $equipment['name'] ?></td>
                                 <td><?= $equipment['detail'] ?></td>
                                 <td>
@@ -72,7 +75,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                 <h4 class="modal-title">รายละเอียดวัสดุ</h4>
             </div>
             <div class="modal-body">
-                <img id="img" width="150px" class="img-responsive" src="" alt="">
+                <img id="img" width="250px" class="img-responsive" src="" alt="">
                 <p class="detail" id="detail"></p>
             </div>
             <div class="modal-footer">

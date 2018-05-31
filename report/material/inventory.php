@@ -18,8 +18,7 @@ $sth = $pdo->query("SELECT
     m.name material_name,
     t.name material_type,
     amount
-    FROM material_stock AS s
-    LEFT JOIN material AS m ON s.material_id = m.id
+    FROM material AS m
     LEFT JOIN material_type AS t ON m.type_id = t.id");
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>

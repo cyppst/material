@@ -27,13 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $user->save();
 
     if ($result):
-        $msg->success('This is a success message', 'index.php');
+        $msg->success('This is a success message', 'import.php');
     else:
         $msg->error('This is an error message', $_SERVER['HTTP_REFERER']);
     endif;
 
 } else {
-    $msg->error('This is an error message', 'index.php');
+    $msg->error('This is an error message', 'import.php');
 }
 
 include $_SERVER['DOCUMENT_ROOT'] . '/include/foot.php';

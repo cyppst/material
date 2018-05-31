@@ -8,13 +8,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'):
     $result = $material_type->save();
 
     if ($result):
-        $msg->success('แก้เสร็จ', 'index.php');
+        $msg->success('แก้เสร็จ', 'import.php');
     else:
         $msg->error('ผิดพลาด', $_SERVER['HTTP_REFERER']);
     endif;
 
 else:
-    $msg->error('This is an error message', 'index.php');
+    $msg->error('This is an error message', 'import.php');
 endif;
 
 include $_SERVER['DOCUMENT_ROOT'] . '/include/foot.php';

@@ -1,20 +1,30 @@
 <?php
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/include/pixie_config.php';
+if (!session_id()) @session_start();
+
 if (isset($_GET['student_id'])) {
     $student_id = $_GET['student_id'];
     $result = ORM::for_table('equipment_history')
-        ->where('user_id', $_SESSION['user']['id'])
+        ->where('user_id', 1)
         ->where('status', 'รับอุปกรณ์แล้ว')
         ->where('student_id', $student_id)
         ->find_many();
 
 } else {
-    $result = ORM::for_table('equipment_history')
-        ->where('user_id', $_SESSION['user']['id'])
+    $user = array();
+    $user = $_SESSION['user'];
+
+    $result = ORM::for_table('equipment_history')->table_alias('h')
+        ->select('h.datetime', 'datetime')
+        ->select('e.name', 'name')
+        ->select('h.amount', 'amount')
+        ->join('equipment', array('e.id', '=', 'h.equipment_id'), 'e')
+        ->where('user_id', $user['id'])
+        ->where_null('student_id')
         ->where('status', 'รับอุปกรณ์แล้ว')
-        ->where('student_id', NULL)
         ->find_many();
+
 }
 
 ?>
@@ -39,7 +49,7 @@ if (isset($_GET['student_id'])) {
                 <div class="tile">
                     <div class="row">
                         <div class="col-md-12">
-                            <form id="in" action="confirm.php" method="POST">
+                            <form autocomplete="no" action="confirm.php" method="POST">
                                 <div class="tile">
                                     <script src="/assets/js/plugins/barcode-scanner.js"></script>
                                     <div class="row">
@@ -47,22 +57,18 @@ if (isset($_GET['student_id'])) {
                                             <div class="form-group">
                                                 <label for="barcode">สแกนบัตรนักศึกษา <i class="fas fa-barcode"></i>
                                                 </label>
-                                                <input class="form-control" name="student_id" type="text" data-barcode-scanner-target
+                                                <input class="form-control" name="student_id" type="text"
+                                                       data-barcode-scanner-target
                                                        readonly>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </form>
             </form>
         </div>
     </div>
 
-                </div>
-            </form>
-        </div>
-    </div>
     <div class="clearfix"></div>
     <div class="tile">
         <h3 class="tile-title">รายการยืมอุปกรณ์</h3>
@@ -70,7 +76,6 @@ if (isset($_GET['student_id'])) {
             <table class="table">
                 <thead>
                 <tr>
-                    <th>#</th>
                     <th>วัน / เวลาที่ยืม</th>
                     <th>ชื่ออุปกรณ์</th>
                     <th>จำนวน</th>
@@ -82,9 +87,8 @@ if (isset($_GET['student_id'])) {
                 foreach ($result as $row) {
                     ?>
                     <tr>
-                        <td><?= $row->id ?></td>
-                        <td><?= Date::createFromTimeString($row->datetime)->add('543 years')->format('l j F Y H:i:s') ?></td>
-                        <td><?= $row->equipment_id ?></td>
+                        <td><?= \Jenssegers\Date\Date::createFromTimeString($row->datetime)->add('543 years')->format('l j F Y H:i:s') ?></td>
+                        <td><?= $row->name ?></td>
                         <td><?= $row->amount ?></td>
                         <td>
 
@@ -106,29 +110,5 @@ if (isset($_GET['student_id'])) {
 
 </main>
 
-<script type="text/javascript">
-    function confirmReturn(id) {
-        let name = event.target.getAttribute('data-name');
 
-        swal({
-            title: 'ยืนยัน',
-            text: 'การคืน ' + name + 'หรือไม่?',
-            type: 'error',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'ยืนยัน',
-            cancelButtonText: 'ยกเลิก!',
-            confirmButtonClass: 'btn btn-success',
-            cancelButtonClass: 'btn btn-danger',
-            buttonsStyling: false
-        }).then(function () {
-            alert('aa');
-            window.location = "/manage/equipment/return/return.php?id=" + id;
-
-        }, function (dismiss) {
-            return false;
-        })
-    }
-</script>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/foot.php'; ?>

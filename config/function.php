@@ -119,3 +119,14 @@ function notify($fullname, $equipment_id)
     $text = 'ผู้ใช้' . $fullname . 'ได้ทำการยืม' . $equipment_id;
     $ln->send($text);
 }
+
+function check_barcode($table, $barcode)
+{
+
+    $count = ORM::for_table($table)->where('barcode', $barcode)->count();
+    if ($count > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}

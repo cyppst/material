@@ -9,9 +9,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $msg = new \Plasticbrain\FlashMessages\FlashMessages();
     if ($result) {
-        $msg->success('สำเร็จ', 'index.php');
+        $msg->success('สำเร็จ', 'import.php');
 
     } else {
-        $msg->error('ผิดพลาด', 'index.php');
+        $msg->error('ผิดพลาด', 'import.php');
     }
 }
