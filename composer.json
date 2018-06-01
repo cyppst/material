@@ -19,8 +19,7 @@
   "autoload": {
     "files": [
       "config/database.php",
-      "config/function.php",
-      "config/csv.php"
+      "config/function.php"
     ]
   }
 }

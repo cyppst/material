@@ -14,5 +14,4 @@ return array(
     '7745382c92b7799bf1294b1f43023ba2' => $vendorDir . '/tracy/tracy/src/shortcuts.php',
     'e498698fb6f1e841bf7ec2b12ccada5f' => $baseDir . '/config/database.php',
     '00e22987c8782569329a21f4c5f7e1bf' => $baseDir . '/config/function.php',
-    'dd327931ef0b58fe23cbb9c3d2663385' => $baseDir . '/config/csv.php',
 );

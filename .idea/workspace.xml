@@ -2,80 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df50cf2d-1904-4a32-a086-2042cde20024" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/manage/student/student.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/barcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/barcode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/borrow/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/borrow/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/borrow/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/borrow/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/borrow/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/borrow/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/in/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/in/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/in/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/in/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/return/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/return/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/return/return.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/return/return.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/in/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/in/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/in/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/in/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/out/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/out/confirm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/out/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/out/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/out/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/out/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/notify_test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material_type/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material_type/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material_type/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material_type/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material_type/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material_type/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material_type/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/student/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/student/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/student/import.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/student/import.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/student/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/student/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/unit/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/unit/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/unit/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/unit/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/unit/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/unit/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/unit/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/insert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/dist/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/dist/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/seq.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/seq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm.php" beforeDir="false" afterPath="$PROJECT_DIR$/orm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/equipment/borrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/equipment/borrow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/equipment/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/equipment/inventory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/material/inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/material/inventory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/material/take.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/material/take.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/equipment/borrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/equipment/borrow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/equipment/return.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/equipment/return.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/include/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/material/take.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/material/take.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/material_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/material_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modal.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tax/PDFFormsFiller" beforeDir="false" afterPath="$PROJECT_DIR$/tax/PDFFormsFiller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tax/pdfform.js" beforeDir="false" afterPath="$PROJECT_DIR$/tax/pdfform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/plasticbrain/php-flash-messages/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/plasticbrain/php-flash-messages/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,20 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage/student/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="import.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage/student/import.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -120,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/student/equipment/borrow.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -147,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/report/material/take.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -156,16 +77,25 @@
         <entry file="file://$PROJECT_DIR$/student/include/head.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+              <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            <state relative-caret-position="240">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="material_db.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/material_db.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="305" column="46" lean-forward="true" selection-start-line="305" selection-start-column="46" selection-end-line="305" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -174,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/report/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1200">
-              <caret line="80" lean-forward="true" selection-start-line="59" selection-end-line="80" />
+              <caret line="80" selection-start-line="59" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -208,7 +138,7 @@
       <find>m.</find>
       <find>AS</find>
       <find>mat</find>
-      <find />
+      <find>RE student_id =</find>
       <find>e.b</find>
       <find>\</find>
       <find>$thi</find>
@@ -242,7 +172,7 @@
       <replace>$</replace>
       <replace>.042,null</replace>
       <replace>$_SESSION['student']['id]</replace>
-      <replace />
+      <replace>2018-06-02 05:08:13</replace>
       <replace>e.</replace>
       <replace>equipment</replace>
     </replaceStrings>
@@ -262,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/pdo.php" />
         <option value="$PROJECT_DIR$/material.sql" />
         <option value="$PROJECT_DIR$/report/index.php" />
         <option value="$PROJECT_DIR$/manage/equipment/return/index.php" />
@@ -313,6 +242,7 @@
         <option value="$PROJECT_DIR$/student/equipment/borrow.php" />
         <option value="$PROJECT_DIR$/student/include/head.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/material_db.sql" />
       </list>
     </option>
   </component>
@@ -357,15 +287,12 @@
       <path value="$PROJECT_DIR$/vendor/usmanhalalit/viocon" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/vendor/ifsnop/mysqldump-php" />
       <path value="$PROJECT_DIR$/vendor/ccampbell/chromephp" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/j4mie/idiorm" />
       <path value="$PROJECT_DIR$/vendor/samayo/bulletproof" />
-      <path value="$PROJECT_DIR$/vendor/goodby/csv" />
-      <path value="$PROJECT_DIR$/vendor/league/csv" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -426,11 +353,6 @@
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="manage" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
@@ -553,12 +475,12 @@
       <workItem from="1527776993790" duration="1197000" />
       <workItem from="1527848349472" duration="14473000" />
       <workItem from="1527866793189" duration="10277000" />
-      <workItem from="1527886310449" duration="8389000" />
+      <workItem from="1527886310449" duration="8595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130176000" />
+    <option name="totallyTimeSpent" value="130382000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -580,7 +502,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3293718" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.008010681" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.008010681" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.246875" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -729,9 +651,6 @@
           <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material_db.sql">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/equipment/in/confirm.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -931,14 +850,14 @@
     <entry file="file://$PROJECT_DIR$/report/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
-          <caret line="80" lean-forward="true" selection-start-line="59" selection-end-line="80" />
+          <caret line="80" selection-start-line="59" selection-end-line="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/student/import.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -952,7 +871,7 @@
     <entry file="file://$PROJECT_DIR$/report/material/take.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -973,21 +892,28 @@
     <entry file="file://$PROJECT_DIR$/student/equipment/borrow.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/student/include/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        <state relative-caret-position="240">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="305" column="46" lean-forward="true" selection-start-line="305" selection-start-column="46" selection-end-line="305" selection-end-column="46" />
         </state>
       </provider>
     </entry>
