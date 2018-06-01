@@ -8,16 +8,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $amount = $_POST['amount'];
 
     $material = ORM::for_table('material')->find_one($material_id);
-    $material->amount = $material->get('amount') + $amount;
+    $material->amount = $material->get('amount') - $amount;
     $material->save();
 
 
     $log = ORM::for_table('log')->create();
-    $log->type = 'อุปกรณ์';
+    $log->type = 'วัสดุ';
     $log->item_id = $material_id;
+    $log->user_id = $_SESSION['user']['id'];
     $log->amount = $amount;
     $log->save();
     $msg = new \Plasticbrain\FlashMessages\FlashMessages();
-    $msg->success('ok', 'import.php');
+    $msg->success('บันทึกข้อมูลสำเร็จ', 'index.php');
 
 }

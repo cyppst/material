@@ -2,15 +2,6 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 if (!session_id()) @session_start();
 $msg = new \Plasticbrain\FlashMessages\FlashMessages();
-if (isset($_POST['student_id'])) {
-    $id = $_POST['student_id'];
-    $student = ORM::for_table('student')->findOne($id);
-    if (!$student) {
-        $msg->error('<strong>ไม่พบข้อมูล</strong> กรุณาตรวจสอบรหัส นศ. ของท่านให้ถูกต้อง', '/');
-    } else {
-        $_SESSION['student'] = $student;
-    }
-}
 
 ?>
 
@@ -78,7 +69,8 @@ if (isset($_POST['student_id'])) {
                             <div>
                                 <p class="app-notification__message">Mail server not working</p>
                                 <p class="app-notification__meta">5 min ago</p>
-                            </div>
+                            </div>Compatibility with frameworks
+
                         </a></li>
                     <li><a class="app-notification__item" href="javascript:"><span class="app-notification__icon"><span
                                         class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i
@@ -138,7 +130,7 @@ if (isset($_POST['student_id'])) {
                                         src="/assets/img/user.png"
                                         alt="User Image">
         <div>
-            <p class="app-sidebar__user-name text-capitalize"><?= $student['full_name']; ?> </p>
+            <p class="app-sidebar__user-name text-capitalize"><?= $_SESSION['student']['full_name'] ?></p>
         </div>
     </div>
     <ul class="app-menu">
@@ -148,7 +140,7 @@ if (isset($_POST['student_id'])) {
                         class="app-menu__label">รายการเบิกวัสดุ</span></a></li>
 
         <li class=""><a class="app-menu__item"
-                        href="/student/material/take.php"><i
+                        href="/student/equipment/borrow.php"><i
                         class="app-menu__icon fa fa-page"></i><span
                         class="app-menu__label">รายการยืมอุปกรณ์</span></a></li>
         <li class=""><a class="app-menu__item"
@@ -156,10 +148,7 @@ if (isset($_POST['student_id'])) {
                         class="app-menu__icon fa fa-page"></i><span
                         class="app-menu__label">รายการคืนอุปกรณ์</span></a></li>
 
-        <li class=""><a class="app-menu__item"
-                        href="/student/report"><i
-                        class="app-menu__icon fa fa-page"></i><span
-                        class="app-menu__label">ออกรายงาน</span></a></li>
+
 
     </ul>
 </aside>

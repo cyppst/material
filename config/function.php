@@ -1,9 +1,10 @@
 <?php
 
+use GuzzleHttp\Client;
 use Jenssegers\Date;
 
-
 Date\Date::setLocale('th');
+
 
 function redirectBack($message)
 {
@@ -112,12 +113,37 @@ function generateEAN($number)
     return $code;
 }
 
-function notify($fullname, $equipment_id)
+
+function notify($message)
 {
-    $token = 'LINE_NOTIFY_TOKEN';
-    $ln = new KS\Line\LineNotify($token);
-    $text = 'ผู้ใช้' . $fullname . 'ได้ทำการยืม' . $equipment_id;
-    $ln->send($text);
+
+    $token = '1ZLsbQVif7AdpAA8hVI5dDbl3cNXyhFGi70V4JuO6Xx';
+    $client = new Client(['base_uri' => 'https://notify-api.line.me/api/notify']);
+    $client->post('notify', [
+        'headers' => [
+            'Content-Type' => 'application/x-www-form-urlencoded',
+            'Authorization' => 'Bearer ' . $token
+        ],
+        'form_params' => [
+            'message' => $message
+        ]
+    ]);
+}
+
+function notify_image($path)
+{
+
+    $token = '1ZLsbQVif7AdpAA8hVI5dDbl3cNXyhFGi70V4JuO6Xx';
+    $client = new Client(['base_uri' => 'https://notify-api.line.me/api/notify']);
+    $client->post('notify', [
+        'headers' => [
+            'Content-Type' => 'application/x-www-form-urlencoded',
+            'Authorization' => 'Bearer ' . $token
+        ],
+        'form_params' => [
+            'message' => $message
+        ]
+    ]);
 }
 
 function check_barcode($table, $barcode)

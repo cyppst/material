@@ -46,11 +46,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                                 <td><?= $unit['id'] ?></td>
                                 <td><?= $unit['name'] ?></td>
                                 <td>
-                                    <button class="btn btn-info btn-sm edit" data-id="<?= $unit['id'] ?>"><i
-                                                class="fa fa-pencil"></i> แก้ไข
+                                    <button type="button" data-id="<?= $unit['id'] ?>"
+                                            class="btn btn-primary edit"><i class="fa fa-edit"></i>แก้ไข
                                     </button>
-                                    <button class="btn btn-danger btn-sm delete" data-id="<?= $unit['id'] ?>"
-                                            data-name="<?= $unit['name'] ?>"><i class="fa fa-bin"></i> ลบ
+                                    <button class="btn btn-danger btn-sm delete"
+                                            data-id="<?= $unit['id'] ?>"
+                                            data-name="<?= $unit['name'] ?>"><i class="fa fa-trash"></i>ลบ
                                     </button>
                                 </td>
                             </tr>
@@ -72,7 +73,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
         var id = $(this).data("id");
         var name = $(this).data("name");
         swal({
-            title: 'กรุณายืนยันการลบ',
+            title: 'กรุณายืนยันการลบ '+name,
             type: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',

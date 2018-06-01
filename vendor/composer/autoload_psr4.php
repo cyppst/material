@@ -15,7 +15,6 @@ return array(
     'Ozdemir\\Datatables\\' => array($vendorDir . '/ozdemir/datatables/src'),
     'KS\\Line\\' => array($vendorDir . '/kittinan/php-line-notify/src'),
     'Jenssegers\\Date\\' => array($vendorDir . '/jenssegers/date/src'),
-    'Ifsnop\\' => array($vendorDir . '/ifsnop/mysqldump-php/src/Ifsnop'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),

@@ -91,7 +91,7 @@
         </main>
         <?php
     } else {
-        $msg->error('This is an error message', 'index . php');
+        $msg->error('พบข้อผิิดพลาด', 'index . php');
 
     }
 

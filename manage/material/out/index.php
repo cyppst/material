@@ -39,8 +39,8 @@
             if (isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] == 'update.php'):
             session_start();
             require_once $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
-            $sth = $pdo->query("SELECT  m.name material_name, t.name type_name, amount FROM material_inventory AS i
-LEFT JOIN material AS m ON i.material_id = m.id
+            $sth = $pdo->query("SELECT  m.name material_name, t.name type_name, amount FROM material_history AS h
+LEFT JOIN material AS m ON h.material_id = m.id
 LEFT JOIN material_type AS t ON m.type_id = t.id");
             $result = $sth->fetchAll(PDO::FETCH_ASSOC);
             ?>

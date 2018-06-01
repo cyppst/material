@@ -16,6 +16,7 @@ if (isset($_GET['student_id'])) {
     $user = $_SESSION['user'];
 
     $result = ORM::for_table('equipment_history')->table_alias('h')
+        ->select('h.id', 'id')
         ->select('h.datetime', 'datetime')
         ->select('e.name', 'name')
         ->select('h.amount', 'amount')
@@ -41,7 +42,11 @@ if (isset($_GET['student_id'])) {
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
         </ul>
     </div>
-
+    <div class="row">
+        <div class="col">
+            <?php get_message(); ?>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-md-12">
@@ -72,7 +77,7 @@ if (isset($_GET['student_id'])) {
     <div class="clearfix"></div>
     <div class="tile">
         <h3 class="tile-title">รายการยืมอุปกรณ์</h3>
-        <div class="table-responsive">
+        <div class=" table-condensed">
             <table class="table">
                 <thead>
                 <tr>
@@ -92,8 +97,8 @@ if (isset($_GET['student_id'])) {
                         <td><?= $row->amount ?></td>
                         <td>
 
-                            <button type="button" class="btn btn-primary"
-                                    data-name="<?= $row->name ?>" href="return.php?id=<?= $row->id ?>"
+                            <button type="button" class="btn btn-primary btn-sm"
+                                    data-name="<?= $row->name ?>"
                                     onclick="confirmReturn(<?= $row->id ?>)">
                                 คืนอุปกรณ์
                             </button>
@@ -110,5 +115,28 @@ if (isset($_GET['student_id'])) {
 
 </main>
 
+<script type="text/javascript">
+    function confirmReturn(id) {
+        let name = event.target.getAttribute('data-name');
 
+        swal({
+            title: 'ยืนยัน',
+            text: 'การคืน ' + name + ' หรือไม่?',
+            type: 'error',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'ยืนยัน',
+            cancelButtonText: 'ยกเลิก!',
+            confirmButtonClass: 'btn btn-success',
+            cancelButtonClass: 'btn btn-danger',
+            buttonsStyling: false
+        }).then(function () {
+            window.location = "/manage/equipment/return/return.php?id=" + id;
+
+        }, function (dismiss) {
+            return false;
+        })
+    }
+</script>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/foot.php'; ?>

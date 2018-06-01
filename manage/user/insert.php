@@ -29,9 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = $user->save();
 
         if ($result) {
-            $msg->success('This is a success message', 'import.php');
+            $msg->success('บันทึกข้อมูลสำเร็จ', 'index.php');
         } else {
-            $msg->error('This is an error message', 'create.php');
+            $msg->error('พบข้อผิิดพลาด', 'create.php');
 
         }
 

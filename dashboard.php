@@ -1,83 +1,76 @@
 <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
-    include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
+$dashboard = array();
+$dashboard['user'] = ORM::for_table('user')->count();
+$dashboard['equipment'] = ORM::for_table('equipment')->count();
+$dashboard['material'] = ORM::for_table('equipment_history')->count();
+$dashboard['history']['equipment'] = ORM::for_table('material')->count();
+
+$login_data = ORM::for_table('user')->select('fullname')->select('last_login')->find_many();
+
 ?>
 
 
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
-            <p>A free and modular admin template</p>
+            <h1><i class="fa fa-tachometer-alt"></i> หน้าหลัก</h1>
+            <p></p>
         </div>
-        <ul class="app-breadcrumb breadcrumb">
-            <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-        </ul>
+
     </div>
     <div class="row">
         <div class="col-md-6 col-lg-3">
             <div class="widget-small primary coloured-icon"><i class="icon fa fa-users fa-3x"></i>
                 <div class="info">
-                    <h4>Users</h4>
-                    <p><b>5</b></p>
+                    <h4>ผู้ใช้ทั้งหมด</h4>
+                    <a href="/manage/user"><p><b><?= $dashboard['user'] ?></b></p></a>
                 </div>
             </div>
         </div>
         <div class="col-md-6 col-lg-3">
-            <div class="widget-small info coloured-icon"><i class="icon fa fa-thumbs-o-up fa-3x"></i>
+            <div class="widget-small info coloured-icon"><i class="icon fa fa-toolbox fa-3x"></i>
                 <div class="info">
-                    <h4>Likes</h4>
-                    <p><b>25</b></p>
+                    <h4>อุปกรณ์ทั้งหมด</h4>
+                    <a href="/manage/equipment"><p><b><?= $dashboard['equipment'] ?></b></p></a>
                 </div>
             </div>
         </div>
         <div class="col-md-6 col-lg-3">
             <div class="widget-small warning coloured-icon"><i class="icon fa fa-files-o fa-3x"></i>
                 <div class="info">
-                    <h4>Uploades</h4>
-                    <p><b>10</b></p>
+                    <h4>วัสดุทั้งหมด</h4>
+                    <a href="/manage/material"><p><b><?= $dashboard['material'] ?></b></p></a>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="widget-small danger coloured-icon"><i class="icon fa fa-star fa-3x"></i>
-                <div class="info">
-                    <h4>Stars</h4>
-                    <p><b>500</b></p>
-                </div>
-            </div>
-        </div>
-    </div>
 
+    </div>
     <div class="row">
-        <div class="col-md-6">
-            <div class="tile">
-                <h3 class="tile-title">Features</h3>
-                <ul>
-                    <li>Built with Bootstrap 4, SASS and PUG.js</li>
-                    <li>Fully responsive and modular code</li>
-                    <li>Seven pages including login, user profile and print friendly invoice page</li>
-                    <li>Smart integration of forgot password on login page</li>
-                    <li>Chart.js integration to display responsive charts</li>
-                    <li>Widgets to effectively display statistics</li>
-                    <li>Data tables with sort, search and paginate functionality</li>
-                    <li>Custom form elements like toggle buttons, auto-complete, tags and date-picker</li>
-                    <li>A inbuilt toast library for providing meaningful response messages to user's actions</li>
-                </ul>
-                <p>Vali is a free and responsive admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.</p>
-                <p>Vali is is light-weight, expendable and good looking theme. The theme has all the features required in a dashboard theme but this features are built like plug and play module. Take a look at the <a href="http://pratikborsadiya.in/blog/vali-admin" target="_blank">documentation</a> about customizing the theme colors and functionality.</p>
-                <p class="mt-4 mb-4"><a class="btn btn-primary mr-2 mb-2" href="http://pratikborsadiya.in/blog/vali-admin" target="_blank"><i class="fa fa-file"></i>Docs</a><a class="btn btn-info mr-2 mb-2" href="https://github.com/pratikborsadiya/vali-admin" target="_blank"><i class="fa fa-github"></i>GitHub</a><a class="btn btn-success mr-2 mb-2" href="https://github.com/pratikborsadiya/vali-admin/archive/master.zip" target="_blank"><i class="fa fa-download"></i>Download</a></p>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="tile">
-                <h3 class="tile-title">Compatibility with frameworks</h3>
-                <p>This theme is not built for a specific framework or technology like Angular or React etc. But due to it's modular nature it's very easy to incorporate it into any front-end or back-end framework like Angular, React or Laravel.</p>
-                <p>Go to <a href="http://pratikborsadiya.in/blog/vali-admin" target="_blank">documentation</a> for more details about integrating this theme with various frameworks.</p>
-                <p>The source code is available on GitHub. If anything is missing or weird please report it as an issue on <a href="https://github.com/pratikborsadiya/vali-admin" target="_blank">GitHub</a>. If you want to contribute to this theme pull requests are always welcome.</p>
-            </div>
-        </div>
+        <div class="col-md-12">
+         <div class="tile">
+             <table class="table">
+                 <thead>
+                 <tr>
+                     <th>ผู้ใช้</th>
+                     <th>เวลาที่เข้าสู่ระบบ</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <?php
+                 foreach ($login_data as $data):
+                     ?>
+                     <tr>
+                         <td scope="row"><?=$data['fullname']?></td>
+                         <td><?=$data['last_login']?></td>
+                     </tr>
+                 <?php endforeach; ?>
+                 </tbody>
+             </table>
+
+         </div>
+         </div>
     </div>
 </main>
 <?php include 'include/foot.php'; ?>

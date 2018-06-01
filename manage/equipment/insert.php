@@ -36,5 +36,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') :
         $equipment->no_barcode = true;
         $equipment->save();
     }
-    $msg->success('ok', 'import.php');
+    $msg->success('บันทึกข้อมูลสำเร็จ', 'index.php');
 endif;

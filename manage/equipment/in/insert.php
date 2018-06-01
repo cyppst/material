@@ -1,28 +1,21 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    session_start();
-    $equipment_id = $_POST['equipment_id'];
-    $amount = $_POST['amount'];
 
-    $equipment = ORM::for_table('equipment')->find_one($equipment_id);
-    $equipment->equipment_id = $equipment_id;
-    $equipment->amount = $equipment->get('amount') - $amount;
-    $equipment->save();
+if (!session_id()) @session_start();
+
+$equipment = ORM::for_table('equipment')->find_one($_POST['equipment_id']);
+$equipment->amount = $equipment->get('amount') + $_POST['amount'];
+$equipment->save();
 
 
-    $log = ORM::for_table('log')->create();
-    $log->type = 'อุปกรณ์';
-    $log->item_id = $equipment_id;
-    $log->amount = $amount;
-    $log->save();
-
-    $msg = new \Plasticbrain\FlashMessages\FlashMessages();
-    $msg->success('ok', 'import.php');
-
-}
+$eq_log = ORM::for_table('log')->create();
+$eq_log->type = 'อุปกรณ์';
+$eq_log->item_id = $_POST['equipment_id'];
+$eq_log->user_id = $_SESSION['user']['id'];
+$eq_log->amount = $_POST['amount'];
+$eq_log->save();
 
 $msg = new \Plasticbrain\FlashMessages\FlashMessages();
-$msg->success('ok', 'import.php');
+$msg->success('บันทึกข้อมูลสำเร็จ', 'index.php');
 

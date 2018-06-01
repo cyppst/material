@@ -13,7 +13,7 @@ if (isset($_SESSION['formFields'])) {
     $user = ORM::for_table('user')->find_one($_GET['id']);
 
 } else {
-    $msg->error('0', 'import.php');
+    $msg->error('0', 'index.php');
 }
 ?>
 <main class="app-content">
@@ -62,12 +62,11 @@ if (isset($_SESSION['formFields'])) {
                                 <input class="form-control" id="login" name="login"
                                        value="<?= $user['login'] ?>"
                                        type="text"
-                                       placeholder="Enter Name">
+                                       placeholder="Enter Name" disabled>
                             </div>
                             <div class="form-group">
                                 <label for="password">password</label>
                                 <input class="form-control" id="password" name="password"
-                                       value="<?= $user['password'] ?>"
                                        type="text"
                                        placeholder="Enter Name">
                             </div>

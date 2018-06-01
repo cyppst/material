@@ -9,18 +9,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!session_id()) @session_start();
     $material_id = $_POST['material_id'];
     $amount = $_POST['amount'];
+    $student_id = $_POST['student_id'];
+
+
     $material = ORM::for_table('material')->find_one($material_id);
     $material->amount = $material->get('amount') - $amount;
     $material->save();
 
 
     $history = ORM::for_table('material_history')->create();
-    $history->user_id;
-    $history->material_id;
-    $history->amount;
-    $history->datetime;
+    $history->user_id = $_SESSION['user']['id'];
+    $history->material_id = $material_id;
+    $history->amount = $amount;
+    if (isset($_POST['student"id'])) $history->student_id = $student_id;
     $history->save();
 
 
-    $msg->success('ok', 'import.php');
+    $msg->success('บันทึกข้อมูลสำเร็จ', 'index.php');
 }

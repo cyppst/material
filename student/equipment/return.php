@@ -8,13 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
     <main class="app-content">
         <div class="app-title">
             <div>
-                <h1><i class="fa fa-th-list"></i> รายการคืนวัสดุ</h1>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col">
-                <?php get_message(); ?>
+                <h1><i class="fa fa-th-list"></i> รายการยืมอุปกรณ์</h1>
             </div>
         </div>
         <div class="row">
@@ -24,32 +18,34 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
                         <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th>วันที่</th>
-                                <th>บาร์โค๊ด</th>
-                                <th>ชื่อวัสดุ</th>
-                                <th>ประเภท</th>
+                                <th>วัันที่/เวลา</th>
+                                <th>Barcode</th>
+                                <th>ชื่อครุภัณฑ์</th>
                                 <th>จำนวน</th>
                             </tr>
+                            1
                             </thead>
                             <tbody>
                             <?php
-                            $equipments = ORM::for_table('equipment_history')
-                                ->table_alias('h')
-                                ->select('h.*')
-                                ->select('e.name', 'equipment_name')
-                                ->select('e.barcode', 'barcode')
-                                ->where('student_id', $student['id'])
-                                ->where('status', 'คืนอุปกรณ์แล้ว')
-                                ->join('equipment', array('h.equipment_id', '=', 'e.id'), 'e')
-                                ->find_many();
-                            foreach ($equipments as $equipment): ?>
-                                <tr>
-                                    <td><?= $equipment['datetime'] ?></td>
-                                    <td><?= $equipment['barcode'] ?></td>
-                                    <td><?= $equipment['equipment_name'] ?></td>
-                                    <td><?= $equipment['amount'] ?></td>
-                                    <td><?= $equipment['status'] ?></td>
+                            $status = 'คืนอุปกรณ์แล้ว';
+                            $sql = "SELECT
+                            h.datetime datetime,
+                            e.barcode barcode, e.name equipment_name,
+                            h.amount amount,h.status status
+FROM equipment_history AS h
+LEFT JOIN equipment AS e ON h.equipment_id = e.id
+WHERE student_id =:student_id AND status = 'คืนอุปกรณ์แล้ว'";
+                            $stmt = $pdo->prepare($sql);
+                            $stmt->bindParam(':student_id', $_SESSION['student']['id']);
+                            $stmt->execute();
+                            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+                            foreach ($result as $row => $link):?>
+                                <tr>
+                                    <td><?= $link['datetime'] ?></td>
+                                    <td><?= $link['barcode'] ?></td>
+                                    <td><?= $link['equipment_name'] ?></td>
+                                    <td><?= $link['amount'] ?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </tbody>
@@ -59,18 +55,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
             </div>
         </div>
     </main>
-    <div class="modal fade" id="imageUrl" tabindex="-1" role="dialog" aria-labelledby="imageUrlLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">รายละเอียดวss</h4>
+    <div class="modal fade" id="imageUrl" tabindex=" - 1" role="dialog" aria-labelledby="imageUrlLabel">
+        <div class="modal - dialog modal - lg" role="document">
+            <div class="modal - content">
+                <div class="modal - header">
+                    <h4 class="modal - title">รายละเอียดวss</h4>
                 </div>
-                <div class="modal-body">
-                    <img id="img" class="img-responsive" src="" alt="">
+                <div class="modal - body">
+                    <img id="img" class="img - responsive" src="" alt="">
                     <p class="detail" id="detail"></p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger center-block" data-dismiss="modal">close</button>
+                <div class="modal - footer">
+                    <button type="button" class="btn btn - danger center - block" data-dismiss="modal">close</button>
                 </div>
             </div>
         </div>

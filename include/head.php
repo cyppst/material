@@ -41,10 +41,9 @@ if (!isset($_SESSION['user'])) {
 
 
     <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
 
-    <script src="/assets/js/sweetalert2.js"></script>
-    <link rel="stylesheet" href="/assets/css/sweetalert2.css">
-    <title>ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ</title>
+    <title>ระบบเบิกจ่ายวัสดุอุปกรณ์</title>
 
 </head>
 <body class="app sidebar-mini rtl">
@@ -106,9 +105,8 @@ if (!isset($_SESSION['user'])) {
                 <li><a class="treeview-item <?= is_current('material_type'); ?> "
                        href="/manage/material_type"><i
                                 class="icon fa fa-print"></i>ประเภทวัสดุ</a></li>
-                <li><a class="treeview-item <?= is_current('material_type'); ?> "
-                       href="/barcode"><i
-                                class="icon fa fa-print"></i>สร้างบาร์โค๊ด</a></li>
+
+
                 <li><a class="treeview-item <?= is_current('material_type'); ?> "
                        href="/manage/student"><i
                                 class="icon fa fa-print"></i>นำเข้ารายชื่อ นศ.</a></li>
@@ -140,11 +138,10 @@ if (!isset($_SESSION['user'])) {
                         class="app-menu__label">ออกรายงาน</span><i
                         class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="/report/"><i class="icon fa fa-print"></i>การเบิกวัสดุ</a>
+                <li><a class="treeview-item" href="/report/"><i class="icon fa fa-print"></i> ออกรายงาน
+                        (สรุปรายเดือน)</a>
                 </li>
-                <li><a class="treeview-item" href="/report/"><i class="icon fa fa-print"></i>การยืมอุปกรณืประจำเดือน</a>
-                </li>
-                <li><a class="treeview-item" href="/report/equipment/not_returned.php"><i class="icon fa fa-print"></i>การยืมอุปกรณ์ที่ค้างส่งคืน</a>
+                <li><a class="treeview-item" href="/report/equipment/not_returned.php"><i class="icon fฤa fa-print"></i>การยืมอุปกรณ์ที่ค้างส่งคืน</a>
                 </li>
                 <li><a class="treeview-item" href="/report/material/inventory.php"><i class="icon fa fa-print"></i>ยอดคงเหลือวัสดุ</a>
                 </li>

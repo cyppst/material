@@ -2,7 +2,7 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 if (!session_id()) @session_start();
 
-//    $msg = new \Plasticbrain\FlashMessages\FlashMessages();
+$msg = new \Plasticbrain\FlashMessages\FlashMessages();
 
 
 if (isset($_SESSION['user'])) {
@@ -20,7 +20,9 @@ if (!empty($_POST['login']) && !empty($_POST['password'])):
 
     if (count($user) > 0 && $password == $user['password']) {
         $_SESSION['user'] = $user;
-        $message = '';
+        $userUpdate = ORM::for_table('user')->find_one($user->id);
+        $userUpdate->id = time();;
+        $userUpdate->save();
 
         header("Location: dashboard.php");
 
@@ -49,7 +51,7 @@ endif;
     <style type="text/css">
 
     </style>
-    <title>ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ</title>
+    <title>ระบบเบิกจ่ายวัสดุอุปกรณ์</title>
 </head>
 <body>
 
@@ -119,7 +121,7 @@ endif;
             </div>
 
             <!-- Modal body -->
-            <form action="/student" method="POST">
+            <form action="/student/index.php" method="POST">
                 <div class="modal-body">
                     <div class="form-group">
                         <label class="control-label">รหัสประจำตัวนักศึกษา</label>

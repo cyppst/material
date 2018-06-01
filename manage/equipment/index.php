@@ -38,9 +38,19 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                         foreach ($equipments as $equipment): ?>
                             <tr>
                                 <td>
-                                    ์<span
-                                                class="<?= ($equipment['no_barcode'] ? 'text-info' : ''); ?>"><?= $equipment['barcode'] ?></span>
+                                    <?php
+                                    switch ($equipment['no_barcode']) {
+                                        case 0:
+                                            echo $equipment['barcode'];
+                                            break;
+                                        case 1:
+                                            echo '<a href="/barcode-master/barcode.php?f=png&s=upc-a&d=' . $equipment['barcode'] . '"
+                                           class="text-info">' . $equipment['barcode'] . '</a>';
+                                            break;
+                                    }
+                                    ?>
 
+                                </td>
                                 <td><?= $equipment['name'] ?></td>
                                 <td><?= $equipment['detail'] ?></td>
                                 <td>
@@ -48,10 +58,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                                         <button href="#imageUrl" data-id="/uploads/equipment/<?= $equipment['image'] ?>"
                                                 data-detail="<?= $equipment['detail'] ?>"
                                                 class="btn btn-info openModalDetail thumbnail" data-toggle="modal"><i
-                                                    class="fa fa-eye"></i></button>
+                                                    class="fa fa-info"></i> ข้อมูล
+                                        </button>
 
                                         <button type="button" data-id="<?= $equipment['id'] ?>"
-                                                class="btn btn-primary edit"><i class="fa fa-pencil"></i> แก้ไข
+                                                class="btn btn-primary edit"><i class="fa fa-pencil-square-o"></i> แก้ไข
                                         </button>
                                         <button class="btn btn-danger btn-sm delete"
                                                 data-id="<?= $equipment['id'] ?>"

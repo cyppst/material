@@ -11,7 +11,7 @@ $equipment = ORM::for_table('equipment')
 if (empty($equipment)) {
     $msg = new \Plasticbrain\FlashMessages\FlashMessages();
     if (!session_id()) @session_start();
-    $msg->error('`ไม่พบ Barcode นี้ในระบบ`', 'import.php');
+    $msg->error('`ไม่พบ Barcode นี้ในระบบ`', 'index.php');
 }
 
 ?>

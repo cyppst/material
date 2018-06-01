@@ -9,13 +9,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'):
 
     if (!session_id()) @session_start();
     if ($result):
-        $msg->success('แก้ไขข้อมูลเรียบร้อย', 'import.php');
+        $msg->success('แก้ไขข้อมูลเรียบร้อย', 'index.php');
     else:
-        $msg->error('ผิดพลาด', $_SERVER['HTTP_REFERER']);
+        $msg->error('พบข้อผิดพลาด', $_SERVER['HTTP_REFERER']);
     endif;
 
 else:
-    $msg->error('ข้อความแจ้งเตือน', 'import.php');
+    $msg->error('ข้อความแจ้งเตือน', 'index.php');
 endif;
 
 include $_SERVER['DOCUMENT_ROOT'] . '/include/foot.php';

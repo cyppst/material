@@ -14,7 +14,7 @@ $report = ORM::for_table('report_no')->create();
 $report->user_id = $_SESSION['user']['id'];
 $report->save();
 
-$sth = $pdo->query("SELECT * FROM equipment ");
+$sth = $pdo->query("SELECT * FROM equipment ORDER BY amount ");
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>
     <!doctype html>

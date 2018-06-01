@@ -8,12 +8,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $result = $unit->delete();
 
     if ($result) {
-        $msg->success('Remove Success', 'import.php');
+        $msg->success('ลบข้อมูลเรียบร้อย', 'index.php');
     } else {
-        $msg->error('Record id : ' . $_GET['id'] . ' not found.', 'import.php');
+        $msg->error('Record id : ' . $_GET['id'] . ' not found.', 'index.php');
     }
 } else {
-    $msg->error('Wrong Request.', 'import.php');
+    $msg->error('Wrong Request.', 'index.php');
 
 }
 

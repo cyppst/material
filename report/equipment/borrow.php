@@ -14,6 +14,17 @@ $report = ORM::for_table('report_no')->create();
 $report->user_id = $_SESSION['user']['id'];
 $report->save();
 
+$sth = $pdo->query("SELECT
+i.datetime datetime,
+u.fullname fullname,
+e.name equipment_name,
+i.amount amount,
+i.status status
+FROM equipment_history AS i
+LEFT JOIN user AS u ON i.user_id = u.id
+LEFT JOIN equipment AS e ON i.equipment_id = e.id
+");
+$result = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>
     <!doctype html>
 
@@ -30,38 +41,27 @@ $report->save();
     <p align="center"><img src="<?= $_SERVER['DOCUMENT_ROOT'] ?>/assets/report/img/SRU-Logo-Black-White.jpg"
                            class="sru-logo"></p>
     <p class="title">
-        รายงานแสดงการยืมอุปกรณ์
+        รายงานอุปกรณ์ที่ค้างส่งคืน
     </p>
     <div class="report-text-group">
         <p class="report-text-right">
             ออกรายงานเมื่อ : <?= Date::now()->add('543 years')->format('j F Y'); ?></p>
         <p class="report-text-right"> เลขที่ : <?= str_pad($report->id, 5, "0", STR_PAD_LEFT); ?></p>
     </div>
+
     <table>
         <tr>
-            <th>วันที่</th>
-            <th>บาร์โค๊ด</th>
+            <th>วันที่ยืม</th>
+            <th>ผู้ยืม</th>
             <th>ชื่ออุปกรณ์</th>
             <th>จำนวน</th>
-            <th>สถานะ</th>
         </tr>
-        <?php
-        $equipments = ORM::for_table('equipment_history')
-            ->table_alias('h')
-            ->select('h.*')
-            ->select('e.name', 'equipment_name')
-            ->select('e.barcode', 'barcode')
-            ->where('student_id', $student['id'])
-            ->where('status', '\ับอุปกรณ์แล้ว')
-            ->join('equipment', array('h.equipment_id', '=', 'e.id'), 'e')
-            ->find_many();
-        foreach ($equipments as $equipment): ?>
+        <?php foreach ($result as $row => $link): ?>
             <tr>
-                <td><?= $equipment['datetime'] ?></td>
-                <td><?= $equipment['barcode'] ?></td>
-                <td><?= $equipment['equipment_name'] ?></td>
-                <td><?= $equipment['amount'] ?></td>
-                <td><?= $equipment['status'] ?></td>
+                <td><?= $link['datetime'] ?></td>
+                <td><?= $link['fullname'] ?></td>
+                <td><?= $link['equipment_name'] ?></td>
+                <td><?= $link['amount'] ?></td>=
             </tr>
         <?php endforeach; ?>
     </table>

@@ -5,7 +5,8 @@ $msg = new \Plasticbrain\FlashMessages\FlashMessages();
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET'):
     $unit = ORM::for_table('unit')->find_one($_GET['id']);
-    ?>
+endif;
+?>
 
 
     <main class="app-content">
@@ -32,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'):
                                     <input class="form-control" id="name" name="name"
                                            value="<?= $unit['name'] ?>"
                                            type="text"
-                                           placeholder="Enter Name">
+                                           placeholder="กรอกชื่อ" required>
                                 </div>
 
 

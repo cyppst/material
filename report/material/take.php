@@ -10,7 +10,6 @@ ob_start();
 
 <?php
 session_start();
-$input = explode("-", $_GET['month']);
 
 $report = ORM::for_table('report_no')->create();
 $report->user_id = $_SESSION['user']['id'];
@@ -18,8 +17,7 @@ $report->save();
 
 $sth = $pdo->query("SELECT  m.name material_name, t.name type_name, m.amount as amount FROM material AS m
 LEFT JOIN material_history AS h ON h.material_id = m.id
-LEFT JOIN material_type AS t ON m.type_id = t.id
-WHERE MONTH between  MONTH(datetime)= ? AND WHERE YEAR(datetime) = ?", $input[0], $input[1]);
+LEFT JOIN material_type AS t ON m.type_id = t.id");
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>
     <!doctype html>
@@ -35,7 +33,7 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
     <p align="center"><img src="<?= $_SERVER['DOCUMENT_ROOT'] ?>/assets/report/img/SRU-Logo-Black-White.jpg"
                            class="sru-logo"></p>
     <p class="title">
-        รายงานการเบิกวัสดุประจำเดือน <?= Date::create('0', $input[1])->format('F') . '/' . $input[0]; ?>
+        รายงานการเบิกวัสดุทั้งหมด
     </p>
     <div class="report-text-group">
         <p class="report-text-right">

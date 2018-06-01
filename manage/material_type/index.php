@@ -44,11 +44,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                                 <td><?= $type['id'] ?></td>
                                 <td><?= $type['name'] ?></td>
                                 <td>
-                                    <button class="btn btn-info btn-sm edit" data-id="<?= $type['id'] ?>"><i
-                                                class="fa fa-pencil"></i> แก้ไข
+                                    <button type="button" data-id="<?= $type['id'] ?>"
+                                            class="btn btn-primary edit"><i class="fa fa-edit"></i>แก้ไข
                                     </button>
-                                    <button class="btn btn-danger btn-sm delete" data-id="<?= $type['id'] ?>"
-                                            data-name="<?= $type['name'] ?>"><i class="fa fa-bin"></i> ลบ
+                                    <button class="btn btn-danger btn-sm delete"
+                                            data-id="<?= $type['id'] ?>"
+                                            data-name="<?= $type['name'] ?>"><i class="fa fa-trash"></i>ลบ
                                     </button>
                                 </td>
                             </tr>

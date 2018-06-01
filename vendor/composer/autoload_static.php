@@ -43,10 +43,6 @@ class ComposerStaticInit6f2aad7ca24bb170aebd04712d59a02f
         array (
             'Jenssegers\\Date\\' => 16,
         ),
-        'I' => 
-        array (
-            'Ifsnop\\' => 7,
-        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -99,10 +95,6 @@ class ComposerStaticInit6f2aad7ca24bb170aebd04712d59a02f
         'Jenssegers\\Date\\' => 
         array (
             0 => __DIR__ . '/..' . '/jenssegers/date/src',
-        ),
-        'Ifsnop\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/ifsnop/mysqldump-php/src/Ifsnop',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -158,13 +150,6 @@ class ComposerStaticInit6f2aad7ca24bb170aebd04712d59a02f
             'PicoDb' => 
             array (
                 0 => __DIR__ . '/..' . '/fguillot/picodb/lib',
-            ),
-        ),
-        'G' => 
-        array (
-            'Goodby\\CSV' => 
-            array (
-                0 => __DIR__ . '/..' . '/goodby/csv/src',
             ),
         ),
         'C' => 

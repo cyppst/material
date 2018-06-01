@@ -10,7 +10,7 @@ $equipment = ORM::for_table('equipment')
 if (empty($equipment)) {
     $msg = new \Plasticbrain\FlashMessages\FlashMessages();
     if (!session_id()) @session_start();
-    $msg->error('`ไม่พบ Barcode นี้ในระบบ`', 'import.php');
+    $msg->error('`ไม่พบ Barcode นี้ในระบบ`', 'index.php');
 }
 ?>
 
@@ -29,30 +29,30 @@ if (empty($equipment)) {
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form autocomplete="no" action="insert.php" method="POST">
-                <input type="hidden" name="equipment_id" value="<?= $equipment['id'] ?>">
-                <div class="tile">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div id="data_div">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><strong>ชื่ออุปกรณ์ :</strong>
-                                        <span><?= $equipment['name'] ?></span></li>
-                                    <li class="list-group-item"><strong>รายละเอียด</strong>
-                                        <p><?= $equipment['detail'] ?></p></li>
-                                    <li class="list-group-item">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text">จำนวน</span></div>
-                                            <input class="form-control" type="text" name="amount">
-                                        </div>
-                                    </li>
-                                </ul>
-                                <button class="btn btn-primary btn-block mt-4" type="Submit">
-                                    บันทึกข้อมูล
-                                </button>
-            </form>
-        </div>
+            <form action="insert.php" method="POST">
+            <input type="hidden" name="equipment_id" value="<?= $equipment['id'] ?>">
+            <div class="tile">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="data_div">
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>ชื่ออุปกรณ์ :</strong>
+                                    <span><?= $equipment['name'] ?></span></li>
+                                <li class="list-group-item"><strong>รายละเอียด</strong>
+                                    <p><?= $equipment['detail'] ?></p></li>
+                                <li class="list-group-item">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">จำนวน</span></div>
+                                        <input class="form-control" type="text" name="amount">
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-block mt-4" type="Submit">
+                                บันทึกข้อมูล
+                            </button>
+                            </form>
+                        </div>
 </main>
 
 

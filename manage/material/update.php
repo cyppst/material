@@ -26,13 +26,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $material->save();
 
     if ($result):
-        $msg->success('This is a success message', 'import.php');
+        $msg->success('บันทึกข้อมูลสำเร็จ', 'index.php');
     else:
-        $msg->error('This is an error message', $_SERVER['HTTP_REFERER']);
+        $msg->error('พบข้อผิิดพลาด', $_SERVER['HTTP_REFERER']);
     endif;
 
 } else {
-    $msg->error('This is an error message', 'import.php');
+    $msg->error('พบข้อผิิดพลาด', 'index.php');
 }
 
 include $_SERVER['DOCUMENT_ROOT'] . '/include/foot.php';

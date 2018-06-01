@@ -23,8 +23,7 @@
                             <div class="form-group">
                                 <label for="barcode">แสกน Barcode <i class="fas fa-barcode"></i>
                                 </label>
-                                <input type="text" class="form-control" name="barcode" id="barcode" placeholder=""
-                                       readonly>
+                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/barcode.php'; ?>
 
                             </div>
                         </div>
@@ -35,48 +34,47 @@
     </div>
 
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="tile">
-                    <div class="tile-body">
-                        <table class="table table-bordered">
-                            <thead>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tile">
+                <div class="tile-body">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>วันที่</th>
+                            <th>บาร์โค๊ด</th>
+                            <th>ชื่อวัสดุ</th>
+                            <th>จำนวน</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                        $equipments = ORM::for_table('equipment_history')
+                            ->table_alias('h')
+                            ->select('h.*')
+                            ->select('e.name', 'equipment_name')
+                            ->select('e.barcode', 'barcode')
+                            ->where_null('student_id')
+                            ->where('status', 'รับอุปกรณ์แล้ว')
+                            ->join('equipment', array('h.equipment_id', '=', 'e.id'), 'e')
+                            ->find_many();
+                        foreach ($equipments as $equipment): ?>
                             <tr>
-                                <th>วันที่</th>
-                                <th>บาร์โค๊ด</th>
-                                <th>ชื่อวัสดุ</th>
-                                <th>ประเภท</th>
-                                <th>จำนวน</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <?php
-                            $equipments = ORM::for_table('equipment_history')
-                                ->table_alias('i')
-                                ->select('i.*')
-                                ->select('m.name', 'equipment_name')
-                                ->select('m.barcode', 'barcode')
-                                ->where('student_id', $student['id'])
-                                ->where('status', '\ับอุปกรณ์แล้ว')
-                                ->join('equipment', array('i.equipment_id', '=', 'm.id'), 'm')
-                                ->find_many();
-                            foreach ($equipments as $equipment): ?>
-                                <tr>
-                                    <td><?= $equipment['datetime'] ?></td>
-                                    <td><?= $equipment['barcode'] ?></td>
-                                    <td><?= $equipment['equipment_name'] ?></td>
-                                    <td><?= $equipment['amount'] ?></td>
-                                    <td><?= $equipment['หstatus'] ?></td>
+                                <td><?= $equipment['datetime'] ?></td>
+                                <td><?= $equipment['barcode'] ?></td>
+                                <td><?= $equipment['equipment_name'] ?></td>
+                                <td><?= $equipment['amount'] ?></td>
+                                <td><?= $equipment['status'] ?></td>
 
-                                </tr>
-                            <?php endforeach; ?>
-                            </tbody>
-                        </table>
-                    </div>
+                            </tr>
+                        <?php endforeach; ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-     
+    </div>
+
 </main>
 <script src="/assets/js/plugins/jquery-barcodeListener.js"></script>
 <script>

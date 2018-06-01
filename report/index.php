@@ -7,8 +7,8 @@
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-page"></i> ออกรายงานe</h1>
-            <p>การเบิกวัสดุประจำเดือน</p>
+            <h1><i class="fa fa-page"></i> ออกรายงาน</h1>
+            <p>สรุปย่อเป็นรายเดือน</p>
         </div>
         <ul class="app-breadcrumb breadcrumb">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="tile">
-                <div class="tile-title-w-btn">วัสดุ</div>
+                <div class="tile-title">เบิกวัสดุ</div>
                 <div class="tile-body">
                     <form action="/report/material/summary.php" method="get">
                         <input type="month" name="month" id="month">
@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="tile">
-                <div class="tile-title-w-btn">อุปกรณ์</div>
+                <div class="tile-title">ยืมอุปกรณ์</div>
 
                 <div class="tile-body">
                     <form action="/report/equipment/summary.php" method="get">

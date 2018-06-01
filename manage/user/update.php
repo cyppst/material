@@ -20,20 +20,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user->address = $_POST['address'];
     $user->tel = $_POST['tel'];
     $user->password = $_POST['passowrd'];
-    $user->login = $_POST['login'];
+//    $user->login = $_POST['login'];
     if ($has_image) {
         $user->image = $image->getLocation();
+
     }
     $result = $user->save();
 
     if ($result):
-        $msg->success('This is a success message', 'import.php');
+        $msg->success('บันทึกข้อมูลสำเร็จ', 'index.php');
     else:
-        $msg->error('This is an error message', $_SERVER['HTTP_REFERER']);
+        $msg->error('พบข้อผิิดพลาด', $_SERVER['HTTP_REFERER']);
     endif;
 
 } else {
-    $msg->error('This is an error message', 'import.php');
+    $msg->error('พบข้อผิิดพลาด', 'index.php');
 }
 
 include $_SERVER['DOCUMENT_ROOT'] . '/include/foot.php';

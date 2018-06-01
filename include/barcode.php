@@ -10,8 +10,10 @@
 
     })
 </script>
-<input type="text"
+<input type="number"
        class="form-control" name="barcode" id="barcode"
-       oninvalid="this.setCustomValidity('กรุณาสแกน Barcode หรือกรอกรหัครุภัณฑ์')"
-       required readonly>
+    <?php if (basename($_SERVER['PHP_SELF']) !== 'create.php') : ?>
+       oninvalid="this.setCustomValidity('กรุณาสแกน Barcode หรือกรอกรหัครุภัณฑ์')" required>
+<?php endif; ?>
+<!--       required readonly>-->
 <!-- End Barcode Input -->

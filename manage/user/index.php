@@ -47,10 +47,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                                 <td><?= $user['login'] ?></td>
                                 <td>
                                     <button class="btn btn-info btn-sm edit" data-id="<?= $user['id'] ?>"><i
-                                                class="fa fa-pencil"></i> แก้ไข
+                                                class="fa fa-edit"></i> แก้ไข
                                     </button>
                                     <button class="btn btn-danger btn-sm delete" data-id="<?= $user['id'] ?>"
-                                            data-name="<?= $user['name'] ?>"><i class="fa fa-bin"></i> ลบ
+                                            data-name="<?= $user['name'] ?>"><i class="fa fa-trash"></i> ลบ
                                     </button>
                                 </td>
                             </tr>

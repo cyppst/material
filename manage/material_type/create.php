@@ -29,7 +29,7 @@ if (isset($_SESSION['formFields'])) {
                                 <input class="form-control" id="name" name="name"
                                        value="<?= get_input('name') ?>"
                                        type="text"
-                                       placeholder="กรอกข้อมูล">
+                                       placeholder="กรอกข้อมูล" required>
                             </div>
                         </div>
                     </div>

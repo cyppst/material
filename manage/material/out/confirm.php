@@ -16,7 +16,7 @@ $material = ORM::for_table('material')
 if (!$material->count()) {
     if (!session_id()) @session_start();
     $msg = new Plasticbrain\FlashMessages\FlashMessages();
-    $msg->error('ไม่พบข้อมูล รหัส : ' . $barcode . ' ในระบบ.', 'import.php');
+    $msg->error('ไม่พบข้อมูล รหัส : ' . $barcode . ' ในระบบ.', 'index.php');
 }
 
 

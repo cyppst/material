@@ -21,7 +21,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                 <h3 class="tile-title">นำเข้าข้อมูลนักศึกษา (.csv)</h3>
                 <p>
                 <form enctype="multipart/form-data" action="import.php" method="post">
-                    File name to import & upload:<br/>
+                    File name to import & upload:<br />
                     <input size='50' type='file' name='filename'><br/>
                     <input type='submit' name='submit' value='Upload'>
                 </form>

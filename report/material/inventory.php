@@ -19,7 +19,7 @@ $sth = $pdo->query("SELECT
     t.name material_type,
     amount
     FROM material AS m
-    LEFT JOIN material_type AS t ON m.type_id = t.id");
+    LEFT JOIN material_type AS t ON m.type_id = t.id ORDER BY amount ASC");
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>
     <!doctype html>

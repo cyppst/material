@@ -55,7 +55,7 @@ $msg = new \Plasticbrain\FlashMessages\FlashMessages();
 
 // Add messages
 $msg->info('This is an info message');
-$msg->success('This is a success message');
+$msg->success('บันทึกข้อมูลสำเร็จ');
 $msg->warning('This is a warning message');
 $msg->error('This is an error message');
 
@@ -81,7 +81,7 @@ $msg->info('This is a info message');
 
 #### Success
 ````php
-$msg->success('This is a success message');
+$msg->success('บันทึกข้อมูลสำเร็จ');
 ````
 ![Success Message](http://mikeeverhart.net/php-flash-messages/assets/img/success.png)
 
@@ -114,15 +114,15 @@ It's possible to redirect to a different URL before displaying a message. For ex
 The preferred method of doing this is by passing the URL as the 2nd parameter:
 
 ````php
-$msg->error('This is an error message', 'http://yoursite.com/another-page');
+$msg->error('พบข้อผิิดพลาด', 'http://yoursite.com/another-page');
 ````
 
 A redirect is executed as soon as the message it's attached to is queued. As such, if you need multiple messages AND need to redirect then include the URL with the last message:
 
 ````php
-$msg->success('This is a success message');
+$msg->success('บันทึกข้อมูลสำเร็จ');
 $msg->success('This is another success message');
-$msg->error('This is an error message', 'http://redirect-url.com');   
+$msg->error('พบข้อผิิดพลาด', 'http://redirect-url.com');   
 `````
 
 ### Sticky Messages

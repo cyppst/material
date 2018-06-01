@@ -11,6 +11,5 @@ return array(
     'Sabberworm\\CSS' => array($vendorDir . '/sabberworm/php-css-parser/lib'),
     'Pixie' => array($vendorDir . '/usmanhalalit/pixie/src'),
     'PicoDb' => array($vendorDir . '/fguillot/picodb/lib'),
-    'Goodby\\CSV' => array($vendorDir . '/goodby/csv/src'),
     'ChromePhp' => array($vendorDir . '/ccampbell/chromephp'),
 );

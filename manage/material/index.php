@@ -57,11 +57,12 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/dataTable.php';
                                         <button href="#imageUrl" data-id="/uploads/material/<?= $material['image'] ?>"
                                                 data-detail="<?= $material['detail'] ?>"
                                                 class="btn btn-info openModalDetail thumbnail" data-toggle="modal"><i
-                                                    class="fa fa-eye"></i></button>
+                                                    class="fa fa-info"></i> ข้อมูล
+                                        </button>
 
 
                                         <button type="button" data-id="<?= $material['id'] ?>"
-                                                class="btn btn-primary edit"><i class="fa fa-pencil"></i>
+                                                class="btn btn-primary edit"><i class="fa fa-edit"></i>แก้ไข
                                         </button>
                                         <button class="btn btn-danger btn-sm delete"
                                                 data-id="<?= $material['id'] ?>"
@@ -116,11 +117,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/dataTable.php';
 
         });
 
-
         $(document).on("click", ".openModalDetail", function () {
             var imageId = $(this).data('id');
             var detail = $(this).data('detail');
-            document.getElementById("detail").innerHTML = "Paragraph changed!";
+            document.getElementById("detail").innerHTML = detail;
             $(".modal-body #img").attr("src", imageId);
 
         });

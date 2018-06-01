@@ -13,7 +13,7 @@ $database = "material_db"; // MySQL Database name
 
 // Connect to MySQL Database
 $con = new mysqli($host, $user, $password, $database);
-$con->set_charset("utf8");
+mysqli_set_charset($con, 'utf8'); // ← SOLUTION
 
 // Check connection
 if ($con->connect_error) {

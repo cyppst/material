@@ -19,10 +19,10 @@ $material = ORM::for_table('material')
 if (!isset($material)) {
     if (!session_id()) @session_start();
     $msg = new Plasticbrain\FlashMessages\FlashMessages();
-    $msg->error('ไม่พบข้อมูล รหัส : ' . $barcode . ' ในระบบ.', 'import.php');
+    $msg->error('ไม่พบข้อมูล รหัส : ' . $barcode . ' ในระบบ.', 'index.php');
 }
 
-$stock = ORM::for_table('material_stock')->find_one($material['id']);
+$stock = ORM::for_table('material_history')->find_one($material['id']);
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php'; ?>
@@ -56,7 +56,7 @@ $stock = ORM::for_table('material_stock')->find_one($material['id']);
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">จำนวน</span></div>
-                                            <input class="form-control" type="text" name="amount">
+                                            <input class="form-control" type="number" name="amount">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><?= $material->unit_name ?></span>
                                             </div>

@@ -10,12 +10,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
             <div>
                 <h1><i class="fa fa-th-list"></i> รายการเบิกวัสดุ</h1>
             </div>
-
-        </div>
-        <div class="row">
-            <div class="col">
-                <?php get_message(); ?>
-            </div>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -24,35 +18,26 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
                         <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th>วันที่</th>
-                                <th>บาร์โค๊ด</th>
-                                <th>ชื่อวัสดุ</th>
-                                <th>ประเภท</th>
+                                <th>วัันที่/เวลา</th>
+                                <th>Barcode</th>
+                                <th>ชื่อครุภัณฑ์</th>
+                                <th>ชระเภท</th>
                                 <th>จำนวน</th>
                             </tr>
                             </thead>
                             <tbody>
                             <?php
-                            $materials = ORM::for_table('material_inventory')
-                                ->table_alias('i')
-                                ->select('i.*')
-                                ->select('m.name', 'material_name')
-                                ->select('m.barcode', 'barcode')
-                                ->select('t.name', 'type_name')
-                                ->select('u.name', 'unit_name')
-                                ->where('student_id', $student['id'])
-                                ->join('material', array('i.material_id', '=', 'm.id'), 'm')
-                                ->join('material_type', array('t.id', '=', 'm.type_id'), 't')
-                                ->join('unit', array('u.id', '=', 'm.unit_id'), 'u')
-                                ->find_many();
-                            foreach ($materials as $material): ?>
+                            $sth = $pdo->query("SELECT  h.datetime datetime,m.barcode barcode, m.name material_name, t.name type_name, h.amount amount FROM material_history AS h
+LEFT JOIN material AS m ON h.material_id = m.id
+LEFT JOIN material_type AS t ON m.type_id = t.id WHERE student_id = " . $_SESSION['student']['id']);
+                            $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+                            foreach ($result as $row => $link):?>
                                 <tr>
-                                    <td><?= $material['datetime'] ?></td>
-                                    <td><?= $material['barcode'] ?></td>
-                                    <td><?= $material['material_name'] ?></td>
-                                    <td><?= $material['type_name'] ?></td>
-                                    <td><?= $material['amount'] . ' ' . $material['unit_name'] ?></td>
-
+                                    <td><?= $link['datetime'] ?></td>
+                                    <td><?= $link['barcode'] ?></td>
+                                    <td><?= $link['material_name'] ?></td>
+                                    <td><?= $link['type_name'] ?></td>
+                                    <td><?= $link['amount'] ?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </tbody>
