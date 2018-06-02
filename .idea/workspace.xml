@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df50cf2d-1904-4a32-a086-2042cde20024" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew_bold-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew_bold-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew_bold-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew_bolditalic-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew_bolditalic-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew_bolditalic-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew_italic-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew_italic-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/thsarabunnew_italic-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sarabun-webfont/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sarabun-webfont/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sarabun-webfont" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sarabun-webfont" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,24 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage/material/in/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage/material/insert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/head.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -69,11 +38,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            <state relative-caret-position="360">
+              <caret line="5876" column="26" selection-start-line="5876" selection-start-column="26" selection-end-line="5876" selection-end-column="26" />
+              <folding>
+                <element signature="e#84976#85176#2" expanded="true" />
+                <element signature="e#85410#85559#2" expanded="true" />
+                <element signature="e#86132#86278#2" expanded="true" />
+                <element signature="e#86654#86820#1" expanded="true" />
+                <element signature="e#101136#101379#2" expanded="true" />
+                <element signature="e#102415#102664#2" expanded="true" />
+                <element signature="e#136517#136707#2" expanded="true" />
+                <element signature="e#136764#136954#2" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="take.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/report/material/take.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/pdo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thsarabunnew.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/fonts/thsarabunnew.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -114,9 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.042</find>
-      <find>null</find>
-      <find>selec</find>
       <find>_SESS</find>
       <find>inven</find>
       <find>student</find>
@@ -144,10 +147,11 @@
       <find>O R</find>
       <find>'thsara</find>
       <find>thsarabunnew_</find>
+      <find>sans-serif</find>
+      <find>family</find>
+      <find>font-family: &quot;Lato&quot;</find>
     </findStrings>
     <replaceStrings>
-      <replace>อุปกรณ์</replace>
-      <replace>H.</replace>
       <replace>h.d</replace>
       <replace>&gt;</replace>
       <replace>m.</replace>
@@ -176,6 +180,8 @@
       <replace>OR</replace>
       <replace>'thsara</replace>
       <replace>/assets/fonts/thsarabunnew_</replace>
+      <replace>THSarabunNew, sans-serif</replace>
+      <replace>font-family: &quot;THSarabunNew&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/</dir>
@@ -525,12 +531,12 @@
       <workItem from="1527776993790" duration="1197000" />
       <workItem from="1527848349472" duration="14473000" />
       <workItem from="1527866793189" duration="10277000" />
-      <workItem from="1527886310449" duration="11801000" />
+      <workItem from="1527886310449" duration="13247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133588000" />
+    <option name="totallyTimeSpent" value="135034000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -761,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/material/take.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage/material/out/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
@@ -838,13 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/pdo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -956,15 +948,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/fonts/thsarabunnew.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        <state relative-caret-position="360">
+          <caret line="5876" column="26" selection-start-line="5876" selection-start-column="26" selection-end-line="5876" selection-end-column="26" />
+          <folding>
+            <element signature="e#84976#85176#2" expanded="true" />
+            <element signature="e#85410#85559#2" expanded="true" />
+            <element signature="e#86132#86278#2" expanded="true" />
+            <element signature="e#86654#86820#1" expanded="true" />
+            <element signature="e#101136#101379#2" expanded="true" />
+            <element signature="e#102415#102664#2" expanded="true" />
+            <element signature="e#136517#136707#2" expanded="true" />
+            <element signature="e#136764#136954#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/material/take.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/pdo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
         </state>
       </provider>
     </entry>
