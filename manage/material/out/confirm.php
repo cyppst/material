@@ -7,13 +7,13 @@ $material = ORM::for_table('material')
     ->table_alias('m')
     ->select('m.*')
     ->select('t.name', 'type_name')
-    ->select('u.name', 'unit_name')
+    ->select('u.name', 'unit')
     ->where('barcode', $barcode)
     ->join('material_type', array('m.type_id', '=', 't.id'), 't')
     ->join('unit', array('m.unit_id', '=', 'u.id'), 'u')
     ->find_one();
 
-if (!$material->count()) {
+if (!$material) {
     if (!session_id()) @session_start();
     $msg = new Plasticbrain\FlashMessages\FlashMessages();
     $msg->error('ไม่พบข้อมูล รหัส : ' . $barcode . ' ในระบบ.', 'index.php');
@@ -55,7 +55,7 @@ if (!$material->count()) {
                                                 <span class="input-group-text">จำนวน</span></div>
                                             <input class="form-control" type="text" name="amount">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text"><?= $unit_name; ?></span>
+                                                <span class="input-group-text"><?= $material->unit ?></span>
                                             </div>
                                         </div>
                                     </li>
@@ -63,10 +63,9 @@ if (!$material->count()) {
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">ผู้เบิก</span></div>
-                                            <input class="form-control" type="text" name="student_id">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><?= $material['student_id'] ?></span>
-                                            </div>
+                                            <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/include/select-student.php'; ?>
+
+
                                         </div>
                                     </li>
 

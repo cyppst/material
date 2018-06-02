@@ -56,7 +56,8 @@ if (empty($equipment)) {
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">ผู้เบิก</span></div>
-                                            <input class="form-control" type="text" name="student_id">
+                                            <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/include/select-student.php'; ?>
+
                                         </div>
                                     </li>
 

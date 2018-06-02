@@ -35,7 +35,7 @@ $msg = new \Plasticbrain\FlashMessages\FlashMessages();
     <script src="/assets/js/jquery-3.2.1.min.js"></script>
 
     <script src="/assets/js/sweetalert2.js"></script>
-    <link rel="stylesheet" href="/assets/css/sweetalert2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <title>ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ</title>
 
 </head>

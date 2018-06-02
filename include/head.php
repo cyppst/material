@@ -3,7 +3,8 @@ if (!session_id()) @session_start();
 if (!isset($_SESSION['user'])) {
     header("Location: /");
 } else {
-    $user = $_SESSION['user']; } ?>
+    $user = $_SESSION['user'];
+} ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +20,8 @@ if (!isset($_SESSION['user'])) {
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="/assets/js/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.css">
     <title>ระบบเบิกจ่ายวัสดุอุปกรณ์</title>
 </head>
 
@@ -31,9 +34,10 @@ if (!isset($_SESSION['user'])) {
                         class="fa fa-user fa-lg"></i> <span class="text-capitalize"><?= $user['fullname']; ?></span>
             </a>
             <ul class="dropdown-menu settings-menu dropdown-menu-right">
-<!-- ` -->
+                <!-- ` -->
                 <li>
-                    <a class="dropdown-item" href="/logout.php"> <i class="fas fa-sign-out-alt fa-2x""></i> ออกจากระบบ</a>
+                    <a class="dropdown-item" href="/logout.php"> <i class="fas fa-sign-out-alt fa-2x""></i>
+                        ออกจากระบบ</a>
                 </li>
             </ul>
         </li>
