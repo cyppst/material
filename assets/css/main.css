@@ -5,6 +5,7 @@
  * ================================*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,400i,700);
 @import url(https://fonts.googleapis.com/css?family=Niconne);
+@import url(/assets/fonts/thsarabunnew.css);
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -39,7 +40,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-family-THSarabunNew, sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, THSarabunNew, sans-serif;
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -51,7 +52,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: THSarabunNew, sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -69,7 +70,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
     margin: 0;
-    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "THSarabunNew", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, THSarabunNew, sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5;
@@ -5858,7 +5859,7 @@ button.close {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "THSarabunNew", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, THSarabunNew, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -5971,7 +5972,7 @@ button.close {
     z-index: 1060;
     display: block;
     max-width: 276px;
-    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "THSarabunNew", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, THSarabunNew, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -12567,7 +12568,7 @@ body.stop-scrolling {
     border-radius: 3px;
     background: #292929;
     color: white;
-    font-family: sans-serif, Verdana;
+    font-family: THSarabunNew, sans-serif, Verdana;
     font-size: smaller;
     padding: 3px;
 }
@@ -12695,7 +12696,7 @@ body .fc {
 
 /*
 Acceptable font-family overrides for individual icons:
-	"Arial", sans-serif
+	"Arial", THSarabunNew, sans-serif
 	"Times New Roman", serif
 
 NOTE: use percentage font sizes or else old IE chokes
