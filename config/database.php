@@ -1,8 +1,8 @@
 <?php
 
-use Tracy\Debugger;
+/*use Tracy\Debugger;
 
-Debugger::enable();
+Debugger::enable();*/
 
 global $database;
 $database = [
