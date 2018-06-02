@@ -94,6 +94,12 @@ function is_current($requestUri)
         echo 'active';
 }
 
+function is_fopen()
+{
+    $data = fopen("http://80.211.235.73/material", "r");
+    echo $data;
+}
+
 
 function generateEAN($number)
 {

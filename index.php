@@ -43,6 +43,7 @@ if (!empty($_POST['login']) && !empty($_POST['password'])):
 </section>
 <section class="login-content">
     <div class="logo">
+        <img src="/assets/report/img/SRU-Logo-Black-White.jpg" height="120" src="http://localhost/assets/report/img/SRU-Logo-Black-White.jpg55" alt="">
         <h1>ระบบเบิกจ่ายวัสดุอุปกรณ์</h1>
     </div>
     <div class="row">
