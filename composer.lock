@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "0dd6f8e692316c99bd9b43b6174cf599",
     "content-hash": "511649a707d6fbd318e67c1d9ffe20db",
     "packages": [
         {
@@ -47,7 +48,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2013-06-26T03:44:33+00:00"
+            "time": "2013-06-26 03:44:33"
         },
         {
             "name": "dompdf/dompdf",
@@ -109,7 +110,7 @@
             ],
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
-            "time": "2017-11-26T14:49:08+00:00"
+            "time": "2017-11-26 14:49:08"
         },
         {
             "name": "fguillot/picodb",
@@ -149,7 +150,7 @@
             ],
             "description": "Minimalist database query builder",
             "homepage": "https://github.com/fguillot/picoDb",
-            "time": "2018-03-05T22:39:16+00:00"
+            "time": "2018-03-05 22:39:16"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -214,7 +215,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-04-22T15:46:56+00:00"
+            "time": "2018-04-22 15:46:56"
         },
         {
             "name": "guzzlehttp/promises",
@@ -265,7 +266,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-12-20T10:07:11+00:00"
+            "time": "2016-12-20 10:07:11"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -330,7 +331,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-03-20T17:10:46+00:00"
+            "time": "2017-03-20 17:10:46"
         },
         {
             "name": "j4mie/idiorm",
@@ -392,7 +393,7 @@
                 "orm",
                 "query builder"
             ],
-            "time": "2018-05-30T23:57:49+00:00"
+            "time": "2018-05-30 23:57:49"
         },
         {
             "name": "jenssegers/date",
@@ -457,7 +458,7 @@
                 "time",
                 "translation"
             ],
-            "time": "2018-05-16T11:53:55+00:00"
+            "time": "2018-05-16 11:53:55"
         },
         {
             "name": "kittinan/php-line-notify",
@@ -496,7 +497,7 @@
                 "line",
                 "line notify"
             ],
-            "time": "2017-12-17T02:56:32+00:00"
+            "time": "2017-12-17 02:56:32"
         },
         {
             "name": "nesbot/carbon",
@@ -544,7 +545,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-05-29T15:23:46+00:00"
+            "time": "2018-05-29 15:23:46"
         },
         {
             "name": "ozdemir/datatables",
@@ -580,7 +581,7 @@
                 }
             ],
             "description": "PHP Library to handle server-side processing for Datatables, in a fast and simple way.",
-            "time": "2017-12-20T16:43:44+00:00"
+            "time": "2017-12-20 16:43:44"
         },
         {
             "name": "phenx/php-font-lib",
@@ -617,7 +618,7 @@
             ],
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
-            "time": "2017-09-13T16:14:37+00:00"
+            "time": "2017-09-13 16:14:37"
         },
         {
             "name": "phenx/php-svg-lib",
@@ -657,7 +658,7 @@
             ],
             "description": "A library to read, parse and export to PDF SVG files.",
             "homepage": "https://github.com/PhenX/php-svg-lib",
-            "time": "2017-05-24T10:07:27+00:00"
+            "time": "2017-05-24 10:07:27"
         },
         {
             "name": "php-console/php-console",
@@ -708,7 +709,7 @@
                 "google chrome",
                 "php"
             ],
-            "time": "2018-02-25T12:43:21+00:00"
+            "time": "2018-02-25 12:43:21"
         },
         {
             "name": "picqer/php-barcode-generator",
@@ -777,7 +778,7 @@
                 "svg",
                 "upc"
             ],
-            "time": "2017-09-28T19:23:19+00:00"
+            "time": "2017-09-28 19:23:19"
         },
         {
             "name": "plasticbrain/php-flash-messages",
@@ -819,7 +820,7 @@
                 "messages",
                 "session"
             ],
-            "time": "2016-04-01T08:39:38+00:00"
+            "time": "2016-04-01 08:39:38"
         },
         {
             "name": "psr/http-message",
@@ -869,7 +870,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "sabberworm/php-css-parser",
@@ -913,7 +914,7 @@
                 "parser",
                 "stylesheet"
             ],
-            "time": "2016-07-19T19:14:21+00:00"
+            "time": "2016-07-19 19:14:21"
         },
         {
             "name": "samayo/bulletproof",
@@ -959,7 +960,7 @@
                 "security",
                 "upload"
             ],
-            "time": "2017-10-22T12:50:35+00:00"
+            "time": "2017-10-22 12:50:35"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1018,7 +1019,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-04-26T10:06:28+00:00"
+            "time": "2018-04-26 10:06:28"
         },
         {
             "name": "symfony/translation",
@@ -1087,7 +1088,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-30T07:26:09+00:00"
+            "time": "2018-05-30 07:26:09"
         },
         {
             "name": "tracy/tracy",
@@ -1152,7 +1153,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2018-05-25T09:33:08+00:00"
+            "time": "2018-05-25 09:33:08"
         },
         {
             "name": "usmanhalalit/pixie",
@@ -1208,7 +1209,7 @@
                 "sql",
                 "sqlite"
             ],
-            "time": "2017-10-17T07:17:04+00:00"
+            "time": "2017-10-17 07:17:04"
         },
         {
             "name": "usmanhalalit/viocon",
@@ -1255,7 +1256,7 @@
                 "ioc",
                 "test"
             ],
-            "time": "2013-07-13T19:54:56+00:00"
+            "time": "2013-07-13 19:54:56"
         }
     ],
     "packages-dev": [],

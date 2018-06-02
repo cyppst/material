@@ -7,8 +7,8 @@ Debugger::enable();
 global $database;
 $database = [
     'host' => 'localhost',
-    'username' => 'root',
-    'password' => 'toor',
+    'username' => 'material_db',
+    'password' => '123456',
     'database' => 'material_db'
 ];
 
