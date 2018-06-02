@@ -3,24 +3,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 if (!session_id()) @session_start();
 $msg = new \Plasticbrain\FlashMessages\FlashMessages();
 
-$conn = new mysqli($database['host'], $database['username'], $database['password'], $database['database']);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+$database = $database['database'];
+$user = $database['username'];
+$pass = $database['password'];
+$host = $database['host'];
+$dir = dirname(__FILE__) . '/material_db.sql';
 
-$query = '';
-$sqlScript = file('material_db.sql');
-foreach ($sqlScript as $line) {
+echo "<h3>Backing up database to `<code>{$dir}</code>`</h3>";
+exec("mysqldump --user={$user} --password={$pass} --host={$host} {$database} --result-file={$dir} 2>&1", $output);
+var_dump($output);
 
-    $startWith = substr(trim($line), 0, 2);
-    $endWith = substr(trim($line), -1, 1);
-
-    if (empty($line) || $startWith == '--' || $startWith == '/*' || $startWith == '//') {
-        continue;
-    }
-
-    $query = $query . $line;
-    if ($endWith == ';') {
-        mysqli_query($conn, $query) or die('<div class="error-response sql-import-response">Problem in executing the SQL query <b>' . $query . '</b></div>');
-        $query = '';
-    }
-}
-$msg->success('Import ฐานข้อมูลเรียบร้อย', '/');
+$msg->success('Import Database สำเร็จ', '/');
