@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df50cf2d-1904-4a32-a086-2042cde20024" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sarabun-webfont" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sarabun-webfont" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/equipment/return/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/return/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/in/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/in/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/material/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/student/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/student/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/user/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/equipment/borrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/equipment/borrow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/equipment/return.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/equipment/return.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/material/take.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/material/take.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,8 +85,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manage/student/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -299,7 +286,7 @@
       <path value="$PROJECT_DIR$/vendor/samayo/bulletproof" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="69" />
     <option name="y" value="140" />
     <option name="width" value="1180" />
@@ -480,12 +467,12 @@
       <workItem from="1527886310449" duration="13247000" />
       <workItem from="1527942522756" duration="4539000" />
       <workItem from="1527954188476" duration="3971000" />
-      <workItem from="1527961355186" duration="1821000" />
+      <workItem from="1527961355186" duration="2314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147359000" />
+    <option name="totallyTimeSpent" value="147852000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -507,8 +494,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3293718" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49745762" visible="true" weight="0.00998004" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33474576" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49745762" visible="true" weight="0.00998004" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33474576" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.499375" weight="0.32843792" />
@@ -862,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manage/student/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

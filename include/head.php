@@ -23,21 +23,17 @@ if (!isset($_SESSION['user'])) {
 </head>
 
 <body class="app sidebar-mini rtl">
-<header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
+<header class="app-header"><a class="app-header__logo" href="/">ระบบเบิกจ่ายวัสดุอุปกรณ์</a>
     <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
     <ul class="app-nav">
         <li class="dropdown">
             <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"> <i
-                        class="fa fa-user fa-lg"></i>
+                        class="fa fa-user fa-lg"></i> <span class="text-capitalize"><?= $user['fullname']; ?></span>
             </a>
             <ul class="dropdown-menu settings-menu dropdown-menu-right">
+<!-- ` -->
                 <li>
-                    <a class="dropdown-item" href="/manage/user/edit.php?id=
-														<?= $user['id'] ?>"> <i class="fa fa-user fa-lg"></i>
-                        Profile</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="/logout.php"> <i class="fas fa-sign-out-alt fa-2x""></i> Logout</a>
+                    <a class="dropdown-item" href="/logout.php"> <i class="fas fa-sign-out-alt fa-2x""></i> ออกจากระบบ</a>
                 </li>
             </ul>
         </li>
