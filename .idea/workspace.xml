@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df50cf2d-1904-4a32-a086-2042cde20024" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/php.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/check.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sarabun-webfont" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sarabun-webfont" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php_" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/pdo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/equipment/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/equipment/return/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/equipment/return/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material/in/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/in/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/material/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/material/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/student/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/student/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/user/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/user/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage/user/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/manage/user/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/equipment/borrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/equipment/borrow.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/equipment/return.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/equipment/return.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student/material/take.php" beforeDir="false" afterPath="$PROJECT_DIR$/student/material/take.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,82 +29,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="take.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report/material/take.php">
+      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/equipment/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="material_db.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material_db.sql">
+      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/user/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="143">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logout.php">
+      <file leaf-file-name="insert.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/user/insert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="-59" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/user/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="php.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="72" selection-start-column="72" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pdo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/pdo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.lock" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.lock">
+      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/user/delete.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/equipment/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="315">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/function.php">
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/user/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="98" selection-start-line="98" selection-end-line="99" selection-end-column="15" />
-              <folding>
-                <element signature="e#7#29#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/user/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/manage/student/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage/equipment/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -109,16 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>amount</find>
-      <find>m.</find>
-      <find>AS</find>
-      <find>mat</find>
-      <find />
-      <find>e.b</find>
-      <find>\</find>
-      <find>$thi</find>
-      <find>h.equipment</find>
-      <find>$student['id']</find>
       <find>LexerConfig</find>
       <find>material_db</find>
       <find>include/data</find>
@@ -139,12 +137,18 @@
       <find>$database['host']</find>
       <find>k1</find>
       <find>f1</find>
+      <find>รายละเอียดวss</find>
+      <find>รายละเอียดวัสดุ</find>
+      <find>input</find>
+      <find>barcode.php</find>
+      <find>_GET['student_id'</find>
+      <find>อาจาร</find>
+      <find>อ</find>
+      <find>อาจารย์</find>
+      <find>index.h</find>
+      <find>exec</find>
     </findStrings>
     <replaceStrings>
-      <replace>&gt;</replace>
-      <replace>m.</replace>
-      <replace>md-12</replace>
-      <replace>'fullname'</replace>
       <replace>$students</replace>
       <replace>stock</replace>
       <replace>history</replace>
@@ -171,16 +175,20 @@
       <replace />
       <replace />
       <replace>$_ENV['DB_HOST'];</replace>
+      <replace>รายละเอียดวัสดุ</replace>
+      <replace>รายละเอียดอุปกรณ์</replace>
+      <replace>_GET['barcode'</replace>
+      <replace>ผู้ใช้</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/</dir>
       <dir>$PROJECT_DIR$/manage/material/in</dir>
-      <dir>$PROJECT_DIR$/manage/equipment</dir>
       <dir>$PROJECT_DIR$/api</dir>
       <dir>$PROJECT_DIR$/manage</dir>
       <dir>$PROJECT_DIR$/student</dir>
-      <dir>$PROJECT_DIR$/manage/user</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/manage/equipment</dir>
+      <dir>$PROJECT_DIR$/manage/user</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -189,18 +197,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/manage/material_type/create.php" />
-        <option value="$PROJECT_DIR$/manage/unit/create.php" />
         <option value="$PROJECT_DIR$/report/equipment/not_returned.php" />
-        <option value="$PROJECT_DIR$/manage/user/edit.php" />
-        <option value="$PROJECT_DIR$/manage/user/update.php" />
         <option value="$PROJECT_DIR$/config/config.inc.php" />
         <option value="$PROJECT_DIR$/config/config.txt" />
         <option value="$PROJECT_DIR$/manage/user/index.php" />
         <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/student/index.php" />
         <option value="$PROJECT_DIR$/manage/equipment/in/confirm.php" />
-        <option value="$PROJECT_DIR$/manage/material/in/update.php" />
         <option value="$PROJECT_DIR$/manage/material/pdo.php" />
         <option value="$PROJECT_DIR$/manage/equipment/borrow/index.php" />
         <option value="$PROJECT_DIR$/manage/equipment/return/return.php" />
@@ -226,7 +229,6 @@
         <option value="$PROJECT_DIR$/material.sql" />
         <option value="$PROJECT_DIR$/orm.php" />
         <option value="$PROJECT_DIR$/manage/student/config.php" />
-        <option value="$PROJECT_DIR$/manage/student/index.php" />
         <option value="$PROJECT_DIR$/include/head.php" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/index.php" />
@@ -240,6 +242,12 @@
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/vendor/autoload.php" />
         <option value="$PROJECT_DIR$/vendor/check.php" />
+        <option value="$PROJECT_DIR$/manage/material/in/update.php" />
+        <option value="$PROJECT_DIR$/manage/equipment/return/index.php" />
+        <option value="$PROJECT_DIR$/manage/user/update.php" />
+        <option value="$PROJECT_DIR$/manage/user/edit.php" />
+        <option value="$PROJECT_DIR$/manage/user/create.php" />
+        <option value="$PROJECT_DIR$/manage/student/index.php" />
       </list>
     </option>
   </component>
@@ -291,11 +299,11 @@
       <path value="$PROJECT_DIR$/vendor/samayo/bulletproof" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="200" />
-    <option name="y" value="134" />
-    <option name="width" value="1190" />
-    <option name="height" value="611" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="69" />
+    <option name="y" value="140" />
+    <option name="width" value="1180" />
+    <option name="height" value="618" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -309,6 +317,37 @@
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="manage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="manage" type="462c0819:PsiDirectoryNode" />
+              <item name="material" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="manage" type="462c0819:PsiDirectoryNode" />
+              <item name="material" type="462c0819:PsiDirectoryNode" />
+              <item name="in" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="manage" type="462c0819:PsiDirectoryNode" />
+              <item name="material" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="manage" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
@@ -379,7 +418,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;tERMIN&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;composer.j&#9;FILE&#9;file:///var/www/html/composer.json&#10;OUT/INDEX.P&#9;FILE&#9;file:///var/www/html/manage/material/out/index.php&#10;take.php&#9;FILE&#9;file:///var/www/html/student/material/take.php&#10;report/index&#9;FILE&#9;file:///var/www/html/report/index.php&#10;term\&#9;ACTION&#9;ActivateTerminalToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;head&#9;FILE&#9;file:///var/www/html/include/head.php&#10;material/out/&#9;FILE&#9;file:///var/www/html/manage/material/out&#10;material/in/&#9;FILE&#9;file:///var/www/html/manage/material/in&#10;barcod&#9;FILE&#9;file:///var/www/html/include/barcode.php&#10;quipment/create&#9;FILE&#9;file:///var/www/html/manage/equipment/create.php&#10;func&#9;FILE&#9;file:///var/www/html/config/function.php&#10;return/&#9;FILE&#9;file:///var/www/html/manage/equipment/return&#10;borrow/&#9;FILE&#9;file:///var/www/html/manage/equipment/borrow&#10;head.php&#9;FILE&#9;file:///var/www/html/include/head.php&#10;material/index&#9;FILE&#9;file:///var/www/html/manage/material/index.php&#10;student/inc&#9;FILE&#9;file:///var/www/html/student/include&#10;student/h&#9;FILE&#9;file:///var/www/html/student/include/head.php&#10;student&#9;FILE&#9;file:///var/www/html/student&#10;dash&#9;FILE&#9;file:///var/www/html/dashboard.php&#10;include&#9;null&#9;null&#10;html/index.php&#9;FILE&#9;file:///var/www/html/index.php&#10;f&#9;FILE&#9;file:///var/www/html/config/function.php&#10;fu&#9;FILE&#9;file:///var/www/html/config/function.php&#10;report/not&#9;FILE&#9;file:///var/www/html/report/equipment/not_returned.php&#10;function.php&#9;FILE&#9;file:///var/www/html/config/function.php&#10;equipment/index&#9;FILE&#9;file:///var/www/html/manage/equipment/index.php&#10;report/eq&#9;FILE&#9;file:///var/www/html/report/equipment&#10;report/equipment/ิborrow.php&#9;null&#9;null&#10;equipment/return/&#9;FILE&#9;file:///var/www/html/manage/equipment/return&#10;้ำฟ&#9;FILE&#9;file:///var/www/html/include/head.php&#10;stock+&#9;null&#9;null&#10;material/in&#9;FILE&#9;file:///var/www/html/manage/material/in/index.php&#10;student/take.p&#9;FILE&#9;file:///var/www/html/student/material/take.php&#10;.sql&#9;FILE&#9;file:///var/www/html/material.sql&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;take.p&#9;FILE&#9;file:///var/www/html/report/material/take.php&#10;student/&#9;FILE&#9;file:///var/www/html/student&#10;not_re&#9;FILE&#9;file:///var/www/html/report/equipment/not_returned.php&#10;foot.php&#9;FILE&#9;file:///var/www/html/include/foot.php&#10;pdo&#9;FILE&#9;file:///var/www/html/config/pdo.php&#10;pdo.&#9;FILE&#9;file:///var/www/html/manage/material/pdo.php&#10;student/ind&#9;FILE&#9;file:///var/www/html/student/index.php&#10;HEAD.&#9;FILE&#9;file:///var/www/html/include/head.php&#10;TODO&#9;ACTION&#9;ActivateTODOToolWindow&#10;report/sum&#9;FILE&#9;file:///var/www/html/report/equipment/summary.php&#10;borrow/ins&#9;FILE&#9;file:///var/www/html/manage/equipment/borrow/insert.php" />
+    <property name="SearchEverywhereHistoryKey" value="term&#9;ACTION&#9;ActivateTerminalToolWindow&#10;student/index&#9;FILE&#9;file:///var/www/html/manage/student/index.php&#10;user/edit&#9;FILE&#9;file:///var/www/html/manage/user/edit.php&#10;barcode.php&#9;FILE&#9;file:///var/www/html/include/barcode.php&#10;return/index.php&#9;FILE&#9;file:///var/www/html/manage/equipment/return/index.php&#10;tERMIN&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow&#10;composer.j&#9;FILE&#9;file:///var/www/html/composer.json&#10;OUT/INDEX.P&#9;FILE&#9;file:///var/www/html/manage/material/out/index.php&#10;take.php&#9;FILE&#9;file:///var/www/html/student/material/take.php&#10;report/index&#9;FILE&#9;file:///var/www/html/report/index.php&#10;term\&#9;ACTION&#9;ActivateTerminalToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;head&#9;FILE&#9;file:///var/www/html/include/head.php&#10;material/out/&#9;FILE&#9;file:///var/www/html/manage/material/out&#10;material/in/&#9;FILE&#9;file:///var/www/html/manage/material/in&#10;barcod&#9;FILE&#9;file:///var/www/html/include/barcode.php&#10;quipment/create&#9;FILE&#9;file:///var/www/html/manage/equipment/create.php&#10;func&#9;FILE&#9;file:///var/www/html/config/function.php&#10;return/&#9;FILE&#9;file:///var/www/html/manage/equipment/return&#10;borrow/&#9;FILE&#9;file:///var/www/html/manage/equipment/borrow&#10;head.php&#9;FILE&#9;file:///var/www/html/include/head.php&#10;material/index&#9;FILE&#9;file:///var/www/html/manage/material/index.php&#10;student/inc&#9;FILE&#9;file:///var/www/html/student/include&#10;student/h&#9;FILE&#9;file:///var/www/html/student/include/head.php&#10;student&#9;FILE&#9;file:///var/www/html/student&#10;dash&#9;FILE&#9;file:///var/www/html/dashboard.php&#10;include&#9;null&#9;null&#10;html/index.php&#9;FILE&#9;file:///var/www/html/index.php&#10;f&#9;FILE&#9;file:///var/www/html/config/function.php&#10;fu&#9;FILE&#9;file:///var/www/html/config/function.php&#10;report/not&#9;FILE&#9;file:///var/www/html/report/equipment/not_returned.php&#10;function.php&#9;FILE&#9;file:///var/www/html/config/function.php&#10;equipment/index&#9;FILE&#9;file:///var/www/html/manage/equipment/index.php&#10;report/eq&#9;FILE&#9;file:///var/www/html/report/equipment&#10;report/equipment/ิborrow.php&#9;null&#9;null&#10;equipment/return/&#9;FILE&#9;file:///var/www/html/manage/equipment/return&#10;้ำฟ&#9;FILE&#9;file:///var/www/html/include/head.php&#10;stock+&#9;null&#9;null&#10;material/in&#9;FILE&#9;file:///var/www/html/manage/material/in/index.php&#10;student/take.p&#9;FILE&#9;file:///var/www/html/student/material/take.php&#10;.sql&#9;FILE&#9;file:///var/www/html/material.sql&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;take.p&#9;FILE&#9;file:///var/www/html/report/material/take.php&#10;student/&#9;FILE&#9;file:///var/www/html/student&#10;not_re&#9;FILE&#9;file:///var/www/html/report/equipment/not_returned.php&#10;foot.php&#9;FILE&#9;file:///var/www/html/include/foot.php&#10;pdo&#9;FILE&#9;file:///var/www/html/config/pdo.php&#10;pdo.&#9;FILE&#9;file:///var/www/html/manage/material/pdo.php&#10;student/ind&#9;FILE&#9;file:///var/www/html/student/index.php" />
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/poy2" />
@@ -440,12 +479,13 @@
       <workItem from="1527866793189" duration="10277000" />
       <workItem from="1527886310449" duration="13247000" />
       <workItem from="1527942522756" duration="4539000" />
-      <workItem from="1527954188476" duration="3478000" />
+      <workItem from="1527954188476" duration="3971000" />
+      <workItem from="1527961355186" duration="1821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145045000" />
+    <option name="totallyTimeSpent" value="147359000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -459,19 +499,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="34" width="1600" height="866" extended-state="6" />
+    <frame x="69" y="140" width="1180" height="618" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49875" weight="0.32605532" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50125" side_tool="true" visible="true" weight="0.0066755675" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5025424" side_tool="true" visible="true" weight="0.00998004" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3293718" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49875" visible="true" weight="0.0066755675" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.246875" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49745762" visible="true" weight="0.00998004" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33474576" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.499375" weight="0.32843792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -479,31 +519,31 @@
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.3293718" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" visible="true" weight="0.32977304" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection Results" order="12" visible="true" weight="0.32977304" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.499375" weight="0.32843792" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.246875" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.3293718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49875" weight="0.32605532" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3293718" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.499375" weight="0.32843792" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.008010681" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.500625" side_tool="true" weight="0.32896653" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3293718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -534,125 +574,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manage/material/out/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/equipment/in/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/unit/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/material/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/material_type/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/material/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/unit/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" selection-start-line="59" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/material/take.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/material/out/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="27" column="112" selection-start-line="27" selection-start-column="112" selection-end-line="27" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/equipment/borrow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/include/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material.sql" />
-    <entry file="file://$PROJECT_DIR$/notify_test.php" />
-    <entry file="file://$PROJECT_DIR$/orm.php" />
     <entry file="file://$PROJECT_DIR$/manage/student/import.php" />
     <entry file="file://$PROJECT_DIR$/manage/student/student.csv" />
     <entry file="file://$PROJECT_DIR$/manage/student/config.php" />
-    <entry file="file://$PROJECT_DIR$/student/equipment/return.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="30" selection-start-line="30" selection-end-line="40" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage/student/files/รายชื่อ.csv" />
-    <entry file="file://$PROJECT_DIR$/manage/student/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage/unit/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/user/update.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/material/in/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -750,24 +679,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report/material/take.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/material_db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -776,11 +691,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="1455">
           <caret line="98" selection-start-line="98" selection-end-line="99" selection-end-column="15" />
           <folding>
             <element signature="e#7#29#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/pdo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -791,17 +734,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
+    <entry file="file://$PROJECT_DIR$/manage/material/in/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="126">
+          <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/pdo.php">
+    <entry file="file://$PROJECT_DIR$/manage/material/out/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="210">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/barcode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/equipment/borrow.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/material/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="48" selection-start-line="27" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report/material/take.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/equipment/return.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -812,10 +786,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+    <entry file="file://$PROJECT_DIR$/manage/material/in/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="165">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/equipment/return/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/equipment/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/equipment/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/equipment/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/equipment/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/user/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/user/delete.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/user/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/user/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/user/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/user/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/student/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
         </state>
       </provider>
     </entry>

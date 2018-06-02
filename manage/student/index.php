@@ -18,6 +18,7 @@ if (isset($_POST['submit'])) {
         // show error message
         $message = 'ตรสว!';
     } else {
+        mysqli_query($con,'TRUNCATE TABLE mytable');
 
         move_uploaded_file($_FILES["file"]["tmp_name"], "files/" . $_FILES['file']['name']);
 
@@ -76,7 +77,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php'; ?>
 
     <div class="row">
         <div class="col tile">
-            <form enctype="multipart/form-data" method="post" action="indexphp">
+            <form enctype="multipart/form-data" method="post" >
                 <div class="form-group">
                     <label for="file">เลือกไฟล์ csv ที่ต้องการนำเข้า</label>
                     <input name="file" type="file" class="form-control">

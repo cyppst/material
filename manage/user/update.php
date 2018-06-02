@@ -19,11 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user->fullname = $_POST['fullname'];
     $user->address = $_POST['address'];
     $user->tel = $_POST['tel'];
-    $user->password = $_POST['passowrd'];
-//    $user->login = $_POST['login'];
+    if (isset($_POST['password'])) $user->password = $_POST['passowrd'];
     if ($has_image) {
         $user->image = $image->getLocation();
-
     }
     $result = $user->save();
 

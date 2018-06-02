@@ -19,7 +19,7 @@ if (isset($_SESSION['formFields'])) {
 <main class="app-content">
     <div class="app-title">
         <div>
-            <h1><i class="fa fa-page"></i> แก้ไขอาจารย์
+            <h1><i class="fa fa-page"></i> แก้ไขผู้ใช้
             </h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
@@ -34,46 +34,41 @@ if (isset($_SESSION['formFields'])) {
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label for="fullname">Name</label>
+                                <label for="fullname">ชื่อ/นามสกุล</label>
                                 <input class="form-control" id="fullname" name="fullname"
                                        value="<?= $user['fullname'] ?>"
                                        type="text"
                                        aria-describedby="text-fullname" placeholder="Enter Name">
-                                <small class="form-text text-muted" id="text-fullname">We'll never share your email with
-                                    anyone else.
-                                </small>
                             </div>
                             <div class="form-group">
-                                <label for="address">Address</label>
+                                <label for="address">ที่อยู่</label>
                                 <input class="form-control" id="address" name="address"
                                        value="<?= $user['address'] ?>"
                                        type="text"
                                        placeholder="Enter Name">
                             </div>
                             <div class="form-group">
-                                <label for="tel">tel</label>
+                                <label for="tel">โทรศัพท์</label>
                                 <input class="form-control" id="tel" name="tel"
                                        value="<?= $user['tel'] ?>"
                                        type="number"
                                        placeholder="Enter Name">
                             </div>
                             <div class="form-group">
-                                <label for="login">login</label>
+                                <label for="login">ชื่อผู้ใช้</label>
                                 <input class="form-control" id="login" name="login"
                                        value="<?= $user['login'] ?>"
-                                       type="text"
-                                       placeholder="Enter Name" disabled>
+                                       type="text" disabled>
                             </div>
                             <div class="form-group">
-                                <label for="password">password</label>
+                                <label for="password">รหัสผ่าน</label>
                                 <input class="form-control" id="password" name="password"
-                                       type="text"
-                                       placeholder="Enter Name">
+                                       type="text" placeholder="เว้นว่างไว้หากไม่ต้องการเปลี่ยนรหัสผ่าน">
                             </div>
                         </div>
                     </div>
                     <div class="tile-footer">
-                        <button class="btn btn-primary" type="Submit">เพิ่ม</button>
+                        <button class="btn btn-primary" type="Submit">แก้ไขข้อมูล</button>
                     </div>
             </form>
         </div>

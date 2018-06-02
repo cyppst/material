@@ -83,7 +83,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">รายละเอียดวัสดุ</h4>
+                <h4 class="modal-title">รายละเอียดอุปกรณ์</h4>
             </div>
             <div class="modal-body">
                 <img id="img" width="250px" class="img-responsive" src="" alt="">

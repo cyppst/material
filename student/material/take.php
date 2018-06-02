@@ -51,7 +51,7 @@ LEFT JOIN material_type AS t ON m.type_id = t.id WHERE student_id = " . $_SESSIO
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">รายละเอียดวss</h4>
+                    <h4 class="modal-title">รายละเอียดวัสดุ</h4>
                 </div>
                 <div class="modal-body">
                     <img id="img" class="img-responsive" src="" alt="">

@@ -3,12 +3,16 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 if (!session_id()) @session_start();
 
-if (isset($_GET['student_id'])) {
-    $student_id = $_GET['student_id'];
-    $result = ORM::for_table('equipment_history')
-        ->where('user_id', 1)
-        ->where('status', 'รับอุปกรณ์แล้ว')
+if (isset($_GET['barcode'])) {
+    $student_id = $_GET['barcode'];
+    $result = ORM::for_table('equipment_history')->table_alias('h')
+        ->select('h.id', 'id')
+        ->select('h.datetime', 'datetime')
+        ->select('e.name', 'name')
+        ->select('h.amount', 'amount')
+        ->join('equipment', array('e.id', '=', 'h.equipment_id'), 'e')
         ->where('student_id', $student_id)
+        ->where('status', 'รับอุปกรณ์แล้ว')
         ->find_many();
 
 } else {
@@ -56,15 +60,13 @@ if (isset($_GET['student_id'])) {
                         <div class="col-md-12">
                             <form autocomplete="no" action="confirm.php" method="POST">
                                 <div class="tile">
-                                    <script src="/assets/js/plugins/barcode-scanner.js"></script>
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="form-group">
                                                 <label for="barcode">สแกนบัตรนักศึกษา <i class="fas fa-barcode"></i>
                                                 </label>
-                                                <input class="form-control" name="student_id" type="text"
-                                                       data-barcode-scanner-target
-                                                       readonly>
+                                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/barcode.php'; ?>
+
                                             </div>
                                         </div>
                                     </div>

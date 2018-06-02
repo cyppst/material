@@ -83,7 +83,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/dataTable.php';
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">รายละเอียดวss</h4>
+                <h4 class="modal-title">รายละเอียดวัสดุ</h4>
             </div>
             <div class="modal-body">
                 <img id="img" width="200" class="img-responsive" src="" alt="">

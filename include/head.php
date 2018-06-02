@@ -37,7 +37,7 @@ if (!isset($_SESSION['user'])) {
                         Profile</a>
                 </li>
                 <li>
-                    <a class="dropdown-item" href="/logout.php"> <i class="fa fa-sign-out fa-lg"></i> Logout</a>
+                    <a class="dropdown-item" href="/logout.php"> <i class="fas fa-sign-out-alt fa-2x""></i> Logout</a>
                 </li>
             </ul>
         </li>

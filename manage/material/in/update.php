@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $amount = $_POST['amount'];
 
     $material = ORM::for_table('material')->find_one($material_id);
-    $material->amount = $material->get('amount') - $amount;
+    $material->amount = $material->get('amount') + $amount;
     $material->save();
 
 
