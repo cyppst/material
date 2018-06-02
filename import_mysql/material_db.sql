@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 02, 2018 at 06:20 AM
+-- Generation Time: Jun 03, 2018 at 02:44 AM
 -- Server version: 5.7.22
 -- PHP Version: 7.2.5-0ubuntu0.18.04.1
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `material_db`
 --
+CREATE DATABASE IF NOT EXISTS `material_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `material_db`;
 
 -- --------------------------------------------------------
 
@@ -26,6 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `equipment`
 --
 
+DROP TABLE IF EXISTS `equipment`;
 CREATE TABLE `equipment` (
   `id` int(10) NOT NULL,
   `barcode` varchar(13) NOT NULL,
@@ -43,6 +46,7 @@ CREATE TABLE `equipment` (
 -- Table structure for table `equipment_history`
 --
 
+DROP TABLE IF EXISTS `equipment_history`;
 CREATE TABLE `equipment_history` (
   `id` int(10) NOT NULL,
   `datetime` datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'วันที่ส่งคำขอ',
@@ -59,6 +63,7 @@ CREATE TABLE `equipment_history` (
 -- Table structure for table `log`
 --
 
+DROP TABLE IF EXISTS `log`;
 CREATE TABLE `log` (
   `id` int(11) NOT NULL,
   `datetime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -74,6 +79,7 @@ CREATE TABLE `log` (
 -- Table structure for table `material`
 --
 
+DROP TABLE IF EXISTS `material`;
 CREATE TABLE `material` (
   `id` int(10) NOT NULL,
   `barcode` varchar(13) DEFAULT NULL,
@@ -91,6 +97,7 @@ CREATE TABLE `material` (
 -- Table structure for table `material_history`
 --
 
+DROP TABLE IF EXISTS `material_history`;
 CREATE TABLE `material_history` (
   `id` int(10) NOT NULL,
   `datetime` datetime DEFAULT CURRENT_TIMESTAMP,
@@ -106,11 +113,17 @@ CREATE TABLE `material_history` (
 -- Table structure for table `material_type`
 --
 
+DROP TABLE IF EXISTS `material_type`;
 CREATE TABLE `material_type` (
   `id` int(10) NOT NULL,
   `name` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Truncate table before insert `material_type`
+--
+
+TRUNCATE TABLE `material_type`;
 --
 -- Dumping data for table `material_type`
 --
@@ -126,6 +139,7 @@ INSERT INTO `material_type` (`id`, `name`) VALUES
 -- Table structure for table `report_no`
 --
 
+DROP TABLE IF EXISTS `report_no`;
 CREATE TABLE `report_no` (
   `id` int(5) UNSIGNED ZEROFILL NOT NULL,
   `datetime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -138,26 +152,12 @@ CREATE TABLE `report_no` (
 -- Table structure for table `student`
 --
 
+DROP TABLE IF EXISTS `student`;
 CREATE TABLE `student` (
   `id` varchar(13) NOT NULL COMMENT 'รหัสนักศึกษา',
   `full_name` varchar(50) NOT NULL,
   `section` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `student`
---
-
-INSERT INTO `student` (`id`, `full_name`, `section`) VALUES
-('', '', '\r'),
-('5704063001201', 'นางสาวกรกนก ฤกษ์สมุทร', '57043.042\r'),
-('5704063001218', 'นางสาวนัญดา ยาประจัน', '57043.042\r'),
-('5704063001221', 'นางสาวปาริตา คำศรี', '57043.042\r'),
-('5704063001223', 'นางสาวพณิตา ชิตชลธาร', '57043.042\r'),
-('5704063001236', 'นาวสาวศิวพร ใจสะอาด', '57043.042\r'),
-('5704063001244', 'นายอภิวัฒน์ มีสิทธิ์', '57043.042\r'),
-('5704063001246', 'นายอรรถนนท์ เผ่าสำราญ', '57043.042\r'),
-('5704063001247', 'นางสาวอรอุมา ภิรมย์รักษ์', '57043.042\r');
 
 -- --------------------------------------------------------
 
@@ -165,11 +165,17 @@ INSERT INTO `student` (`id`, `full_name`, `section`) VALUES
 -- Table structure for table `unit`
 --
 
+DROP TABLE IF EXISTS `unit`;
 CREATE TABLE `unit` (
   `id` int(10) NOT NULL,
   `name` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Truncate table before insert `unit`
+--
+
+TRUNCATE TABLE `unit`;
 --
 -- Dumping data for table `unit`
 --
@@ -191,6 +197,7 @@ INSERT INTO `unit` (`id`, `name`) VALUES
 -- Table structure for table `user`
 --
 
+DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(10) NOT NULL,
   `fullname` varchar(50) DEFAULT NULL,
@@ -203,11 +210,16 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Truncate table before insert `user`
+--
+
+TRUNCATE TABLE `user`;
+--
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `fullname`, `address`, `tel`, `login`, `password`, `image`, `last_login`) VALUES
-(1, 'suthathip suksawat', '12 ตำบลมะขามเตี้ย อำเภอเมือง จังหวัดสุราษฎร์ธานี 84000', '0936970259', 'admin', '1111', 'default.png', '2018-06-01 19:51:21'),
+(1, 'suthathip suksawat', '12 ตำบลมะขามเตี้ย อำเภอเมือง จังหวัดสุราษฎร์ธานี 84000', '0936970259', 'admin', NULL, 'default.png', '2018-06-01 19:51:21'),
 (2, 'suthathip suksawat', '12 ตำบลมะขามเตี้ย อำเภอเมือง จังหวัดสุราษฎร์ธานี 84000', '0936970259', 'ann', '1102', 'default.png', '2018-06-01 19:51:21');
 
 --
@@ -306,7 +318,7 @@ ALTER TABLE `material`
 -- AUTO_INCREMENT for table `material_history`
 --
 ALTER TABLE `material_history`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `material_type`
 --
@@ -316,7 +328,7 @@ ALTER TABLE `material_type`
 -- AUTO_INCREMENT for table `report_no`
 --
 ALTER TABLE `report_no`
-  MODIFY `id` int(5) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=421;
+  MODIFY `id` int(5) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=425;
 --
 -- AUTO_INCREMENT for table `unit`
 --
