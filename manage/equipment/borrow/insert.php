@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $equipment_history->equipment_id = $equipment_id;
     $equipment_history->amount = $amount;
     $equipment_history->user_id = $_SESSION['user']['id'];
-    if (isset($_POST['student"id'])) $equipment_history->student_id = $student_id;
+    if (isset($_POST['student_id'])) $equipment_history->student_id = $student_id;
     $equipment_history->save();
 
 
