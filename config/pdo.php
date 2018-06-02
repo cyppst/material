@@ -1,10 +1,10 @@
 <?php
 
 $pdo_data = array(
-    'user' => 'root',        // database username
-    'password' => 'toor',    // database password
-    'host' => 'localhost',        // database host (default localhost)
-    'name' => 'material_db',        // database name
+    'user' => $database['username'],        // database username
+    'password' => $database['password'],    // database password
+    'host' => $database['host'],        // database host (default localhost)
+    'name' => $database['database'],        // database name
     'encoding' => 'utf8',        // database connection encoding type
     'fetch_assoc' => true,        // if true: fetch a result row only as an associative array
     'display_errors' => true    // if true: errors will be displayed

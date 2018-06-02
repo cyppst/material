@@ -1,42 +1,26 @@
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 if (!session_id()) @session_start();
-
 $msg = new \Plasticbrain\FlashMessages\FlashMessages();
-
-
 if (isset($_SESSION['user'])) {
     header("Location: /dashboard.php");
 }
-
-
 if (!empty($_POST['login']) && !empty($_POST['password'])):
-
     $login = $_POST['login'];
     $password = $_POST['password'];
-
     $user = ORM::for_table('user')->where('login', $login)->find_one();
-
-
     if (count($user) > 0 && $password == $user['password']) {
         $_SESSION['user'] = $user;
         $userUpdate = ORM::for_table('user')->find_one($user->id);
         $userUpdate->id = time();;
         $userUpdate->save();
-
         header("Location: dashboard.php");
-
     } else {
         $msg = new Plasticbrain\FlashMessages\FlashMessages();
         $msg->error('Login หรือ Password ผิด');
-    }
-
-endif;
-
-?>
-
+    } endif; ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,18 +33,15 @@ endif;
     <link rel="stylesheet" href="/assets/css/sweetalert2.css">
     <script src="/assets/js/sweetalert2.js"></script>
     <style type="text/css">
-
     </style>
     <title>ระบบเบิกจ่ายวัสดุอุปกรณ์</title>
 </head>
-<body>
 
+<body>
 <section class="material-half-bg">
     <div class="cover"></div>
 </section>
-
 <section class="login-content">
-
     <div class="logo">
         <h1>ระบบเบิกจ่ายวัสดุอุปกรณ์</h1>
     </div>
@@ -68,7 +49,6 @@ endif;
         <?= get_message() ?>
     </div>
     <div class="login-box">
-
         <form class="login-form" method="POST">
             <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>เข้าสู่ระบบ</h3>
             <div class="form-group">
@@ -81,7 +61,8 @@ endif;
             </div>
             <div class="form-group">
                 <div class="utility">
-                    <p class="semibold-text mb-2"><a href="#" data-toggle="flip">ลืมรหัสผ่าน ?</a></p>
+                    <p class="semibold-text mb-2"><a href="#" data-toggle="flip">ลืมรหัสผ่าน ?</a>
+                    </p>
                 </div>
             </div>
             <div class="form-group btn-container">
@@ -90,7 +71,6 @@ endif;
                     สำหรับนักศึกษา
                 </button>
             </div>
-
         </form>
         <form class="forget-form" action="index.html">
             <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>ลืมรหัสผ่าน ?</h3>
@@ -103,16 +83,15 @@ endif;
             </div>
             <div class="form-group mt-3">
                 <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Back
-                        to Login</a></p>
+                        to Login</a>
+                </p>
             </div>
         </form>
-
     </div>
 </section>
 <div class="modal" id="login-box2">
     <div class="modal-dialog">
         <div class="modal-content">
-
             <!-- Modal Header -->
             <div class="modal-header">
                 <!--                <h4 class="modal-title">สำหรับนักศึกษา</h4>-->
