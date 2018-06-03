@@ -68,22 +68,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
         var id = $(this).data("id");
         window.location.href = 'edit.php?id=' + id;
     });
-
-    $("button.delete").click(function () {
-        var id = $(this).data("id");
-        var name = $(this).data("name");
-        swal({
-            title: 'กรุณายืนยันการลบ '+name,
-            type: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'ตกลง',
-            cancelButtonText: 'ยกเลิก'
-        }).then(function () {
-            window.location.href = 'delete.php?id=' + id;
-
-        })
-    });
 </script>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/include/delete.php'; ?>
+
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/foot.php'; ?>
