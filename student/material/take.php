@@ -18,27 +18,42 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
                         <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th>วัันที่/เวลา</th>
-                                <th>Barcode</th>
-                                <th>ชื่อครุภัณฑ์</th>
-                                <th>ชระเภท</th>
-                                <th>จำนวน</th>
+                                <th class="text-center">วัันที่/เวลา</th>
+                                <th class="text-center">บาร์โค้ด</th>
+                                <th class="text-center">ชื่อวัสดุ</th>
+                                <th class="text-center">ประเภท</th>
+                                <th class="text-center">จำนวน</th>
                             </tr>
                             </thead>
                             <tbody>
                             <?php
-                            $sth = $pdo->query("SELECT  h.datetime datetime,m.barcode barcode, m.name material_name, t.name type_name, h.amount amount FROM material_history AS h
-LEFT JOIN material AS m ON h.material_id = m.id
-LEFT JOIN material_type AS t ON m.type_id = t.id WHERE student_id = " . $_SESSION['student']['id']);
+                            $student_id = $_SESSION['student']['id'];
+                            $sth = $pdo->query("
+SELECT 
+h.datetime datetime,
+m.barcode barcode,
+t.name type_name,
+m.name material_name,
+h.amount amount
+FROM material_history AS h
+LEFT JOIN material AS m
+ON h.material_id = m.id
+LEFT JOIN material_type AS
+t ON m.type_id = t.id
+WHERE h.student_id = ".$student_id."
+
+");
                             $result = $sth->fetchAll(PDO::FETCH_ASSOC);
-                            foreach ($result as $row => $link):?>
-                                <tr>
-                                    <td><?= $link['datetime'] ?></td>
-                                    <td><?= $link['barcode'] ?></td>
-                                    <td><?= $link['material_name'] ?></td>
-                                    <td><?= $link['type_name'] ?></td>
-                                    <td><?= $link['amount'] ?></td>
-                                </tr>
+                            foreach ($result as $row => $link): ?>
+
+                            <tr>
+
+                                <td><?= $link['datetime'] ?></td>
+                                <td><?= $link['barcode'] ?></td>
+                                <td><?= $link['material_name'] ?></td>
+                                <td><?= $link['type_name'] ?></td>
+                                <td><?= $link['amount'] ?></td>
+                            </tr>
                             <?php endforeach; ?>
                             </tbody>
                         </table>
@@ -58,7 +73,9 @@ LEFT JOIN material_type AS t ON m.type_id = t.id WHERE student_id = " . $_SESSIO
                     <p class="detail" id="detail"></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger center-block" data-dismiss="modal">close</button>
+                    <button type="button" class="btn btn-danger center-block" data-dismiss="modal
+">close
+                    </button>
                 </div>
             </div>
         </div>

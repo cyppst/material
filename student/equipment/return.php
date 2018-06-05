@@ -8,7 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
     <main class="app-content">
         <div class="app-title">
             <div>
-                <h1><i class="fa fa-th-list"></i> รายการยืมอุปกรณ์</h1>
+                <h1><i class="fa fa-th-list"></i> รายการยคืนุปกรณ์</h1>
             </div>
         </div>
         <div class="row">
@@ -18,30 +18,32 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
                         <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th>วัันที่/เวลา</th>
-                                <th>Barcode</th>
-                                <th>ชื่อครุภัณฑ์</th>
-                                <th>จำนวน</th>
+                                <th class="text-center">วัันที่/เวลา</th>
+                                <th class="text-center">บาร์โค้ด</th>
+                                <th class="text-center">ชื่ออุปกรณ์</th>
+                                <th class="text-center">จำนวน</th>
                             </tr>
-                            1
                             </thead>
                             <tbody>
                             <?php
-                            $status = 'คืนอุปกรณ์แล้ว';
-                            $sql = "SELECT
-                            h.datetime datetime,
-                            e.barcode barcode, e.name equipment_name,
-                            h.amount amount,h.status status
+                            $student_id = $_SESSION['student']['id'];
+                            $sth = $pdo->query("
+SELECT 
+h.datetime datetime,
+e.barcode barcode,
+e.name equipment_name,
+h.amount amount
 FROM equipment_history AS h
-LEFT JOIN equipment AS e ON h.equipment_id = e.id
-WHERE student_id =:student_id AND status = 'คืนอุปกรณ์แล้ว'";
-                            $stmt = $pdo->prepare($sql);
-                            $stmt->bindParam(':student_id', $_SESSION['student']['id']);
-                            $stmt->execute();
-                            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+LEFT JOIN equipment AS e
+ON h.equipment_id = e.id
+WHERE h.student_id = ".$student_id."
+AND h.status = 'คืนอุปกรณ์แล้ว'
+");
+                            $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+                            foreach ($result as $row => $link): ?>
 
-                            foreach ($result as $row => $link):?>
                                 <tr>
+
                                     <td><?= $link['datetime'] ?></td>
                                     <td><?= $link['barcode'] ?></td>
                                     <td><?= $link['equipment_name'] ?></td>
@@ -55,18 +57,20 @@ WHERE student_id =:student_id AND status = 'คืนอุปกรณ์แล
             </div>
         </div>
     </main>
-    <div class="modal fade" id="imageUrl" tabindex=" - 1" role="dialog" aria-labelledby="imageUrlLabel">
-        <div class="modal - dialog modal - lg" role="document">
-            <div class="modal - content">
-                <div class="modal - header">
-                    <h4 class="modal - title">รายละเอียดวัสดุ</h4>
+    <div class="modal fade" id="imageUrl" tabindex="-1" role="dialog" aria-labelledby="imageUrlLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">รายละเอียดวัสดุ</h4>
                 </div>
-                <div class="modal - body">
-                    <img id="img" class="img - responsive" src="" alt="">
+                <div class="modal-body">
+                    <img id="img" class="img-responsive" src="" alt="">
                     <p class="detail" id="detail"></p>
                 </div>
-                <div class="modal - footer">
-                    <button type="button" class="btn btn - danger center - block" data-dismiss="modal">close</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger center-block" data-dismiss="modal
+">close
+                    </button>
                 </div>
             </div>
         </div>

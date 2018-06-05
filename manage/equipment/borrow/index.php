@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label for="barcode">แสกน Barcode <i class="fas fa-barcode"></i>
+                                <label for="barcode">สแกน Barcode <i class="fas fa-barcode"></i>
                                 </label>
                                 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/barcode.php'; ?>
 
@@ -41,10 +41,10 @@
                     <table class="table table-bordered">
                         <thead>
                         <tr>
-                            <th>วันที่</th>
-                            <th>บาร์โค๊ด</th>
-                            <th>ชื่อวัสดุ</th>
-                            <th>จำนวน</th>
+                            <th class="text-center">วันที่</th>
+                            <th class="text-center">บาร์โค้ด</th>
+                            <th class="text-center">ชื่อวัสดุ</th>
+                            <th class="text-center">จำนวน</th>
                         </tr>
                         </thead>
                         <tbody>

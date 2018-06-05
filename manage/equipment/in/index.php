@@ -46,10 +46,10 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>วัน/เวลา</th>
-                            <th>ชื่ออุปกรณ์</th>
-                            <th>จำนวน</th>
-                            <th>ผู้ทำรายการ</th>
+                            <th class="text-center">วัน/เวลา</th>
+                            <th class="text-center">ชื่ออุปกรณ์</th>
+                            <th class="text-center">จำนวน</th>
+                            <th class="text-center">ผู้ทำรายการ</th>
                         </tr>
                         </thead>
                         <tbody>

@@ -45,7 +45,7 @@ if (!$material) {
                             <div id="data_div">
                                 <ul class="list-group">
                                     <li class="list-group-item"><strong>ชื่อวัสดุ :</strong>
-                                        <span><?= $material->material_name ?></span> <span
+                                        <span><?= $material['name'] ?></span> <span
                                                 class="badge badge-info"><?= $material->amount; ?></span></li>
                                     <li class="list-group-item"><strong>รายละเอียด</strong>
                                         <p><?= $material['detail'] ?></p></li>
@@ -53,7 +53,7 @@ if (!$material) {
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">จำนวน</span></div>
-                                            <input class="form-control" type="text" name="amount">
+                                            <input class="form-control" type="number" min="0" max="<?= $material->amount; ?>" name="amount">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><?= $material->unit ?></span>
                                             </div>

@@ -54,11 +54,11 @@ WHERE MONTH(datetime) = $input[1] AND YEAR(datetime) = $input[0]");
 
     <table>
         <tr>
-            <th>วันที่เบิก</th>
-            <th>ผู้เบิก</th>
-            <th>ชื่อวัสดุ</th>
-            <th>ประเภท</th>
-            <th>จำนวน</th>
+            <th class="text-center">วันที่เบิก</th>
+            <th class="text-center">ผู้เบิก</th>
+            <th class="text-center">ชื่อวัสดุ</th>
+            <th class="text-center">ประเภท</th>
+            <th class="text-center">จำนวน</th>
         </tr>
         <?php foreach ($result as $row => $link): ?>
             <tr>

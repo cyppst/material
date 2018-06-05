@@ -26,11 +26,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/dataTable.php';
                     <table class="table table-hover table-bordered" id="dataTable">
                         <thead>
                         <tr>
-                            <th>#</th>
-                            <th>บาร์โค๊ด</th>
-                            <th>ชื่ออุปกรณ์</th>
-                            <th>ประเภท</th>
-                            <th>ดำเนินการ</th>
+                            <th class="text-center">#</th>
+                            <th class="text-center">บาร์โค้ด</th>
+                            <th class="text-center">ชื่ออุปกรณ์</th>
+                            <th class="text-center">ประเภท</th>
+                            <th class="text-center">ดำเนินการ</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -57,8 +57,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/dataTable.php';
                                         <button href="#imageUrl" data-id="/uploads/material/<?= $material['image'] ?>"
                                                 data-detail="<?= $material['detail'] ?>"
                                                 class="btn btn-info openModalDetail thumbnail" data-toggle="modal"><i
-                                                    class="fa fa-info"></i> ข้อมูล
-                                        </button>
+                                                    class="fa fa-info"></i> ข้อมูล</button>
 
 
                                         <button type="button" data-id="<?= $material['id'] ?>"
@@ -83,7 +82,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/dataTable.php';
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">รายละเอียดวัสดุ</h4>
+                <h4 class="modal-title">รายละเอียดวss</h4>
             </div>
             <div class="modal-body">
                 <img id="img" width="200" class="img-responsive" src="" alt="">
@@ -131,8 +130,21 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/dataTable.php';
             window.location.href = 'edit.php?id=' + id;
         });
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/delete.php'; ?>
-
+        $("button.delete").click(function () {
+            let id = $(this).data("id");
+            let name = $(this).data("name");
+            swal({
+                title: 'กรุณายืนยันการลบ',
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'ตกลง',
+                cancelButtonText: 'ยกเลิก'
+            }).then(function () {
+                window.location.href = 'delete.php?id=' + id;
+            });
+        });
 
 
     });

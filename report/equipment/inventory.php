@@ -42,9 +42,9 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 
     <table>
         <tr>
-            <th>ชื่ออุปกรณ์</th>
-            <th>จำนวน</th>
-            <th>เคลื่อนไหวล่าสุด</th>
+            <th class="text-center">ชื่ออุปกรณ์</th>
+            <th class="text-center">จำนวน</th>
+            <th class="text-center">เคลื่อนไหวล่าสุด</th>
         </tr>
         <?php foreach ($result as $row => $link): ?>
             <tr>

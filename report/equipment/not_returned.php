@@ -50,11 +50,11 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 
     <table>
         <tr>
-            <th>วันที่ยืม</th>
-            <th>ผู้ยืม</th>
-            <th>ชื่ออุปกรณ์</th>
-            <th>จำนวน</th>
-            <th>สถานะ</th>
+            <th class="text-center">วันที่ยืม</th>
+            <th class="text-center">ผู้ยืม</th>
+            <th class="text-center">ชื่ออุปกรณ์</th>
+            <th class="text-center">จำนวน</th>
+            <th class="text-center">สถานะ</th>
         </tr>
         <?php foreach ($result as $row => $link): ?>
             <tr>

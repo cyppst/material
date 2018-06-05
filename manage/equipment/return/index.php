@@ -83,10 +83,10 @@ if (isset($_GET['barcode'])) {
             <table class="table">
                 <thead>
                 <tr>
-                    <th>วัน / เวลาที่ยืม</th>
-                    <th>ชื่ออุปกรณ์</th>
-                    <th>จำนวน</th>
-                    <th>ดำเนินการ</th>
+                    <th class="text-center">วัน / เวลาที่ยืม</th>
+                    <th class="text-center">ชื่ออุปกรณ์</th>
+                    <th class="text-center">จำนวน</th>
+                    <th class="text-center">ดำเนินการ</th>
                 </tr>
                 </thead>
                 <tbody>

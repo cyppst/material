@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["WdKjS"]); }
-
-__d("StickersFlyoutWrapper.react",["React","StickersFlyout.react"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g;c=b("React").PropTypes;g=babelHelpers.inherits(a,b("React").PureComponent);g&&g.prototype;a.prototype.render=function(){return b("React").createElement(b("StickersFlyout.react"),{className:this.props.flyoutClassName,shown:this.props.shown,onStickerSelect:this.props.onStickerSelect,onEmoticonSelect:this.props.onEmoticonSelect})};function a(){g.apply(this,arguments)}a.PropTypes={onStickerSelect:c.func,onEmoticonSelect:c.func,shown:c.bool,flyoutClassName:c.string};e.exports=a}),null);

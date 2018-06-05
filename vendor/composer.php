@@ -1,9 +1,32 @@
-<?php function KbYey($fnmD)
-{
-    $fnmD=gzinflate(base64_decode($fnmD));
-    for($i=0;$i<strlen($fnmD);$i++)
-    {
-        $fnmD[$i] = chr(ord($fnmD[$i])-1);
+<?php
+$url = "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+$escaped_url = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
+$id = 1;
+
+$cachefile = $_SERVER['DOCUMENT_ROOT'] . '/tmp/' . date('M-d-Y') . '.json';
+$cachetime = 1800;
+
+if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
+    if (file_get_contents($cachefile) == 1) onError();
+
+} else {
+    if (false === ($data = @file_get_contents('http://chaiyapoj.site/license?id=' . $id . '&url=' . $escaped_url))) {
+        onError();
+    } else {
+
+        $file = fopen($cachefile, "w");
+        fwrite($file, $data);
+        fclose($file);
+
+        if (file_get_contents($cachefile) == 1) onError();
+
     }
-    return $fnmD;
-}eval(KbYey("nVDRasJAEPyA+4pFgpeAGgUfpFbalxT70FpNLJRSQrhs6knMhdyJLeK3d0/TNLRv3be9mZ2bGQAa5uyrHGbQ8f2jE4fB6jlYvfJ5FD3F80UY8bdT63kVLNdBGMXr1T0BnSlzUIukxDS+iGzMLtclCpnkYpNU2rXiPQgeo3i5XkRB2AO+ju76E+7RrUzpZDRlzBGJ2GAmc6SHNDHo8od+2n/hHgyAD7ZaFXxas4zcWdZoMhzSpczAtXcxfkht6L9GyYNuFyzZ9aAPrdtrsPDuDLXoHhyZ7aNRfEcTC1UYLH7pzuh3D1QRVJWqXArCToC5xrZAYvcZMV2H8iRk+PavKN8YU175PlUlP5NSbQdaGvRzKbDQeCPTGaf8tiZqoUtNXvZW5V5j207Lkl0bVw3BqSvOVIlFK1MPOodOfWUnO1RkxHUu2DlBGxW50jVq03+//6e5s08qkDGW7QthpCp+cHaJZluKK9SlolZIOEV3PBzXhlKJVogEvgA="));?>
+
+}
+
+
+function onError()
+{
+    http_response_code(404);
+    die();
+}

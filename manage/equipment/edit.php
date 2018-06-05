@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         <div class="row">
             <div class="col-md-12">
-                <form action="update.php" method="POST">
+                <form action="update.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="<?= $equipment['id'] ?>">
                     <div class="tile">
                         <div class="row">
@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                 </div>
                                 <div class="form-group">
                                     <input type="hidden" name="MAX_FILE_SIZE" value="1000000"/>
-                                    <input type="file" class="form-control" name="pictures" accept="image/*"/>
+                                    <input type="file" class="form-control" name="pictures" accept="image/x-png,image/gif,image/jpeg"/>
                                 </div>
                             </div>
                             <div class="form-group">

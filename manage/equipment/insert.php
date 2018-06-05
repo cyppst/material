@@ -20,7 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') :
     }
 
     $equipment->detail = $_POST['detail'];
-    if ($upload) $equipment->image = $image->getName() . '.' . $image->getMime();
+    if (isset($_FILES)) {
+        $equipment->image = $image->getName() . '.' . $image->getMime();
+    }
     $result = $equipment->save();
 
     if (isset($_POST['no_barcode'])) {

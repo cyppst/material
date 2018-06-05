@@ -26,7 +26,7 @@ use Jenssegers\Date\Date;
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="form-group">
-                                <label for="barcode">แสกน Barcode <i class="fas fa-barcode"></i>
+                                <label for="barcode">สแกน Barcode <i class="fas fa-barcode"></i>
                                 </label>
                                 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/barcode.php'; ?>
 
@@ -43,10 +43,10 @@ use Jenssegers\Date\Date;
                         <table class="table">
                             <thead>
                             <tr>
-                                <th>วัน/เวลา</th>
-                                <th>ชื่อวัสดุ</th>
-                                <th>จำนวน</th>
-                                <th>ผู้ทำรายการ</th>
+                                <th class="text-center">วัน/เวลา</th>
+                                <th class="text-center">ชื่อวัสดุ</th>
+                                <th class="text-center">จำนวน</th>
+                                <th class="text-center">ผู้ทำรายการ</th>
                             </tr>
                             </thead>
                             <tbody>

@@ -45,9 +45,9 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 
     <table>
         <tr>
-            <th>ชื่อวัสดุ</th>
-            <th>ประเภท</th>
-            <th>จำนวนคงเหลือ</th>
+            <th class="text-center">ชื่อวัสดุ</th>
+            <th class="text-center">ประเภท</th>
+            <th class="text-center">จำนวนคงเหลือ</th>
         </tr>
         <?php foreach ($result as $row => $link): ?>
             <tr>

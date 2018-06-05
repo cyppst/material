@@ -25,9 +25,12 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="form-group">
-                                                <label for="barcode">แสกน Barcode <i class="fas fa-barcode"></i>
+                                                <label for="barcode">สแกน Barcode <i class="fas fa-barcode"></i>
                                                 </label>
-                                                <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/barcode.php'; ?>
+                                                <?php
+                                                include $_SERVER['DOCUMENT_ROOT'] . '/include/barcode.php';
+                                                include $_SERVER['DOCUMENT_ROOT'] . '/config/pdo.php';
+                                                ?>
 
                                             </div>
                                         </div>
@@ -49,11 +52,11 @@ LEFT JOIN material_type AS t ON m.type_id = t.id");
                     <table class="table table-condensed">
                         <thead>
                         <tr>
-                            <th>วัันที่/เวลา</th>
-                            <th>Barcode</th>
-                            <th>ชื่อครุภัณฑ์</th>
-                            <th>ชระเภท</th>
-                            <th>จำนวน</th>
+                            <th class="text-center">วัันที่/เวลา</th>
+                            <th class="text-center">Barcode</th>
+                            <th class="text-center">ชื่อครุภัณฑ์</th>
+                            <th class="text-center">ชระเภท</th>
+                            <th class="text-center">จำนวน</th>
                         </tr>
                         </thead>
                         <tbody>

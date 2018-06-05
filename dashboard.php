@@ -53,8 +53,8 @@ $login_data = ORM::for_table('user')->select('fullname')->select('last_login')->
              <table class="table">
                  <thead>
                  <tr>
-                     <th>ผู้ใช้</th>
-                     <th>เวลาที่เข้าสู่ระบบ</th>
+                     <th class="text-center">ผู้ใช้</th>
+                     <th class="text-center">เวลาที่เข้าสู่ระบบ</th>
                  </tr>
                  </thead>
                  <tbody>

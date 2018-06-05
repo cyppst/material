@@ -16,7 +16,7 @@ $msg = new \Plasticbrain\FlashMessages\FlashMessages();
     <meta property="twitter:creator" content="@pratikborsadiya">
     <!-- Open Graph Meta-->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ">
+    <meta property="og:site_name" content="ระบบจัดการครุภัณฑ์ วิทยาการคอมฯ">
     <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
@@ -36,10 +36,11 @@ $msg = new \Plasticbrain\FlashMessages\FlashMessages();
 
     <script src="/assets/js/sweetalert2.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-    <title>ะบบจัดการครุภัณฑ์ วิทยาการคอมฯ</title>
+    <title>ระบบจัดการครุภัณฑ์ วิทยาการคอมฯ</title>
 
 </head>
 <body class="app sidebar-mini rtl">
+<img src="/assets/img/head.png" style="margin-left: auto; margin-top: 3%" width="100%" alt="">
 
 <!-- Navbar-->
 

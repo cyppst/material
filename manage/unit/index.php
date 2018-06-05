@@ -32,9 +32,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>รหัสหน่วยนับ</th>
-                            <th>ชื่อหน่วยนับ</th>
-                            <th>ดำเนินการ</th>
+                            <th class="text-center">รหัสหน่วยนับ</th>
+                            <th class="text-center">ชื่อหน่วยนับ</th>
+                            <th class="text-center">ดำเนินการ</th>
                         </tr>
                         </thead>
                         <tbody>

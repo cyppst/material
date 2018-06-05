@@ -31,9 +31,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>รหัสประเภทวัสดุ</th>
-                            <th>ชื่อประเภทวัสดุ</th>
-                            <th>ดำเนินการ</th>
+                            <th class="text-center">รหัสประเภทวัสดุ</th>
+                            <th class="text-center">ชื่อประเภทวัสดุ</th>
+                            <th class="text-center">ดำเนินการ</th>
                         </tr>
                         </thead>
                         <tbody>

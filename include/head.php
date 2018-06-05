@@ -23,9 +23,11 @@ if (!isset($_SESSION['user'])) {
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.css">
     <title>ระบบเบิกจ่ายวัสดุอุปกรณ์</title>
+
 </head>
 
 <body class="app sidebar-mini rtl">
+<img src="/assets/img/head.png" style="margin-left: auto; margin-top: 3%" width="100%" alt="">
 <header class="app-header"><a class="app-header__logo" href="/">ระบบเบิกจ่ายวัสดุอุปกรณ์</a>
     <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
     <ul class="app-nav">
@@ -72,7 +74,7 @@ if (!isset($_SESSION['user'])) {
             </a>
             <ul class="treeview-menu">
                 <li>
-                    <a class="treeview-item" href="/manage/user"> <i class="icon fa fa-print"></i>ผู้ใช้</a>
+                    <a class="treeview-item" href="/manage/user"> <i class="icon fa fa-user"></i> ผู้ใช้</a>
                 </li>
                 <li class="">
                     <a class="treeview-item
@@ -139,7 +141,7 @@ if (!isset($_SESSION['user'])) {
                 </li>
                 <li>
                     <a class="treeview-item" href="/report/equipment/not_returned.php"> <i
-                                class="icon fฤa fa-print"></i>การยืมอุปกรณ์ที่ค้างส่งคืน</a>
+                                class="icon fa fa-print"></i>การยืมอุปกรณ์ที่ค้างส่งคืน</a>
                 </li>
                 <li>
                     <a class="treeview-item" href="/report/material/inventory.php"> <i class="icon fa fa-print"></i>ยอดคงเหลือวัสดุ</a>

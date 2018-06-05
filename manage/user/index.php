@@ -25,12 +25,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                         <thead>
 
                         <tr>
-                            <th>#</th>
-                            <th>ชื่อ นามสกุล</th>
-                            <th>ที่อยู่</th>
-                            <th>โทรศัพท์</th>
-                            <th>ชื่อผู้ใช้</th>
-                            <th>ดำเนินการ</th>
+                            <th class="text-center">#</th>
+                            <th class="text-center">ชื่อ นามสกุล</th>
+                            <th class="text-center">ที่อยู่</th>
+                            <th class="text-center">โทรศัพท์</th>
+                            <th class="text-center">ชื่อผู้ใช้</th>
+                            <th class="text-center">ดำเนินการ</th>
 
                         </tr>
                         </thead>

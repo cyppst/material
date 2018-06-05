@@ -48,8 +48,8 @@ if (empty($equipment)) {
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">จำนวน
                                                 </span></div>
-                                            <input class="form-control" id="amount" name="amount" type="number"
-                                                   autofocus>
+                                            <input class="form-control" type="number" min="0" max="<?= $equipment->amount; ?>" name="amount">
+
                                         </div>
                                     </li>
                                     <li class="list-group-item">

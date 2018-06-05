@@ -45,10 +45,10 @@ eof;
 // View records from the table
 $students = '<table class="table table-bordered">
 <tr>
-    <th>ลำดับ</th>
-    <th>รหัส</th>
-    <th>ชื่อ-นามสกุล</th>
-    <th>กลุ่มเรียน</th>
+    <th class="text-center">ลำดับ</th>
+    <th class="text-center">รหัส</th>
+    <th class="text-center">ชื่อ-นามสกุล</th>
+    <th class="text-center">กลุ่มเรียน</th>
 </tr>
 ';
 $query = "SELECT * FROM student";

@@ -26,10 +26,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                     <table class="table table-hover table-bordered" id="dataTable">
                         <thead>
                         <tr>
-                            <th>บาร์โค๊ด</th>
-                            <th>ชื่ออุปกรณ์</th>
-                            <th>รายละเอียด</th>
-                            <th>ดำเนินการ</th>
+                            <th class="text-center">บาร์โค้ด</th>
+                            <th class="text-center">ชื่ออุปกรณ์</th>
+                            <th class="text-center">รายละเอียด</th>
+                            <th class="text-center">ดำเนินการ</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -61,7 +61,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
                                                     class="fa fa-info"></i> ข้อมูล
                                         </button>
 
-                                        <button type="button" data-id="<?= $equipment['id'] ?>"
+                                        <button type="button" onclick="edit(<?= $equipment['id'] ?>)"
                                                 class="btn btn-primary edit"><i class="fa fa-pencil-square-o"></i> แก้ไข
                                         </button>
                                         <button class="btn btn-danger btn-sm delete"
@@ -127,12 +127,16 @@ include $_SERVER['DOCUMENT_ROOT'] . '/include/head.php';
 
     });
 
-
-    $("button.edit").click(function () {
-        let id = $(this).data('id');
+    function edit(id) {
         window.location.href = 'edit.php?id=' + id;
-    });
+    }
+
 
 </script>
 
+<script>
+    function edit(id) {
+        window.location.href = 'edit.php?id=' + id;
+    }
+</script>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/include/delete.php'; ?>
